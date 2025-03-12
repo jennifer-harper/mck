@@ -1,0 +1,29 @@
+dateModified: 1741816397
+email:
+  fromEmail: mck247@gmail.com
+  fromName: mck-portfolio
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1445dbd5-ccef-4fa3-9056-0b8415192dc8: Home # Home
+    1995c984-7976-460c-957a-bf9dcdcc7ed6: Home # Home
+    9171106b-0dd1-4f50-866a-16cb06075f29: mck-portfolio # mck-portfolio
+    adc00353-c591-4ccc-b163-e71f6d107da9: mck-portfolio # mck-portfolio
+plugins:
+  copy:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: mck-portfolio
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

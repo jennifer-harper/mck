@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 1995c984-7976-460c-957a-bf9dcdcc7ed6 # Home
+handle: home
+maxAuthors: 1
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/home.twig
+    uriFormat: __home__
+type: single

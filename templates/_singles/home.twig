@@ -1,0 +1,13 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "home" } %} 
+{% set docTitle = entry.title %} 
+{# {% set metaDesc = entry.metaDescription %}  #}
+
+{# {% set page = craft.entries().section('work').with([['mainImage']]).all() %}  #}
+
+{% block content %} 
+    {# {% embed '_components/project-grid' %}
+    {% block bgColor %} bg-gray-800 {% endblock %}
+    {% endembed %} #}
+    <h1>Home</h1>
+{% endblock %}

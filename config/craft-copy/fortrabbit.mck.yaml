@@ -1,0 +1,9 @@
+app: mck
+ssh_url: mck@deploy.eu2.frbit.com
+git_remote: mck/master
+before:
+    code/up: {  }
+after:
+    code/down:
+        - 'php craft migrate/all'
+        - 'php craft project-config/apply'
