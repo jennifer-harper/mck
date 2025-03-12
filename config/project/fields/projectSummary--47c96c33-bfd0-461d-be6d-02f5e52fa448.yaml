@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: projectSummary
+instructions: null
+name: 'Project Summary'
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: bde027f6-27be-4d50-89fb-9f3a4a622559 # Simple
+  createButtonLabel: null
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

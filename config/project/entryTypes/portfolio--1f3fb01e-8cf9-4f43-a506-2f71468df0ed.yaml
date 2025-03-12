@@ -1,0 +1,99 @@
+color: lime
+fieldLayouts:
+  67434661-63ac-450f-a383-1d41230e749c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-12T22:06:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5f4849f2-b50b-4521-9796-6b24ae1c9969
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T22:20:29+00:00'
+            elementCondition: null
+            fieldUid: 8b791e8b-5c63-4fa0-8152-1948e73f2cc6 # Main Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3baed23-5504-4551-8c88-ab9260600f3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T22:14:20+00:00'
+            elementCondition: null
+            fieldUid: 47c96c33-bfd0-461d-be6d-02f5e52fa448 # Project Summary
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2af79ba-6844-4e08-8034-409f7c14f97f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T22:14:20+00:00'
+            elementCondition: null
+            fieldUid: 78a82d0c-8b84-47b5-9d27-3ce8f342a951 # Project Images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16694be9-65aa-4b1e-86c5-70a59eaae0d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 24ab4974-7f21-4514-9f18-165591920fde
+        userCondition: null
+handle: portfolio
+hasTitleField: true
+icon: skull
+name: Portfolio
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

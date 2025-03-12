@@ -1,0 +1,46 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "portfolio" } %} 
+{% set docTitle = entry.title %} 
+{# {% set metaDesc = entry.metaDescription %}  #}
+
+{% block content %} 
+    <div class="p-[20px] lg:p-[4vw]">
+        <div class="w-full pb-[5%]">
+            {% if entry.title %} 
+                <h1>{{entry.title}}</h1>
+            {% endif %} 
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 lg:w-1/3 md:pe-[6%] pb-[20px] md:pb-0">
+                {% if entry.projectSummary %} 
+                    {{entry.projectSummary}}
+                {% endif %}
+            </div>
+             <div class="w-full md:w-1/2 lg:w-2/3">
+
+                {% set images = entry.projectImages %}
+                {% if images | length %}
+                    {% for image in images %}
+                        {% if image and image.cloudflareCode %}
+                            <img src="https://imagedelivery.net/FfNXKd05SW9wypnlOimQoA/{{ image.cloudflareCode }}/public" 
+                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"  
+                                loading="lazy" 
+                                alt="{{ image.alt | default('Placeholder') }}"
+                                >
+                        {% else %}
+                            <img src="{{image.getUrl()}}" 
+                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"  
+                                loading="lazy" 
+                                 alt="{{ image.alt | default('Placeholder') }}"
+                                >
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
