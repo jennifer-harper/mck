@@ -6,6 +6,9 @@
 {% set page = craft.entries().section('portfolio').with([['mainImage']]).orderBy('postDate desc').all() %} 
 
 {% block content %} 
-    {% include '_components/project-grid' %}
+<div class="bg-[#011d22]">
+ {% include '_components/project-grid' %}
+</div>
+   
     
 {% endblock %}

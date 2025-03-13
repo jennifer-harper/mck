@@ -8,8 +8,6 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-gray-400: oklch(0.707 0.022 261.325);
-    --color-gray-600: oklch(0.446 0.03 256.802);
-    --color-gray-800: oklch(0.278 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -1075,32 +1073,11 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
-  .bg-\[\#ff2222\] {
-    background-color: #ff2222;
-  }
-  .bg-\[\#\{\{globals\.iconLogoColor\}\}\] {
-    background-color: #{{globals.iconLogoColor}};
-  }
-  .bg-\[\#\{\{globals\.navBgColor\}\}\] {
-    background-color: #{{globals.navBgColor}};
-  }
-  .bg-\[\#\{\{navBgColor\}\}\] {
-    background-color: #{{navBgColor}};
-  }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-\[\{\{globals\.navBgColor\}\}\] {
-    background-color: {{globals.navBgColor}};
-  }
-  .bg-gray-600 {
-    background-color: var(--color-gray-600);
-  }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
