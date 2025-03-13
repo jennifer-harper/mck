@@ -3,7 +3,7 @@
 {% set bodyAttributes = { class: "categories" } %}
 {% set docTitle = category.title %}
 {% set metaDesc = category.metaDescription %}
-{% set page = craft.entries.section('portfolio').relatedTo(category).all() %}
+{% set page = craft.entries.section('portfolio').relatedTo(category).orderBy('postDate desc').all() %}
 
 {% block content %}
 
