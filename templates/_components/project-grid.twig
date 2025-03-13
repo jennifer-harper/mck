@@ -7,7 +7,7 @@
         <div class="media-box">
             {% set image = entry.mainImage.one() %}
             {% if image and image.cloudflareCode %}
-                <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{image.cloudflareCode}}/public" 
+                <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{image.cloudflareCode}}/public?w=600&h=400&fit=cover" 
                 class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"  
                 loading="lazy" 
                 alt="{{ image.alt|default('Placeholder') }}"

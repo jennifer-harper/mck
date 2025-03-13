@@ -7,9 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-amber-200: oklch(0.924 0.12 95.746);
     --color-gray-400: oklch(0.707 0.022 261.325);
-    --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-gray-800: oklch(0.278 0.033 256.848);
     --color-white: #fff;
@@ -251,9 +249,6 @@
   .isolation-auto {
     isolation: auto;
   }
-  .z-100 {
-    z-index: 100;
-  }
   .z-auto {
     z-index: auto;
   }
@@ -445,9 +440,6 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-\[100dvh\] {
-    height: 100dvh;
   }
   .h-\[100vh\] {
     height: 100vh;
@@ -1085,9 +1077,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
   }
@@ -1224,9 +1213,6 @@
   .fill-none {
     fill: none;
   }
-  .fill-white {
-    fill: var(--color-white);
-  }
   .stroke-none {
     stroke: none;
   }
@@ -1281,20 +1267,8 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
-  }
-  .pe-\[20px\] {
-    padding-inline-end: 20px;
-  }
   .pt-\[20px\] {
     padding-top: 20px;
-  }
-  .pt-\[100px\] {
-    padding-top: 100px;
-  }
-  .pt-\[120px\] {
-    padding-top: 120px;
   }
   .pb-\[5\%\] {
     padding-bottom: 5%;
@@ -1432,9 +1406,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
@@ -1889,20 +1860,6 @@
   }
   .transform-view {
     transform-box: view-box;
-  }
-  .group-hover\:fill-gray-500 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        fill: var(--color-gray-500);
-      }
-    }
-  }
-  .group-hover\:text-gray-500 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-gray-500);
-      }
-    }
   }
   .group-hover\:opacity-10 {
     &:is(:where(.group):hover *) {
