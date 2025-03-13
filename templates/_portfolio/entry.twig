@@ -18,27 +18,22 @@
                 {% endif %}
             </div>
              <div class="w-full md:w-1/2 lg:w-2/3">
-
                 {% set images = entry.projectImages %}
                 {% if images | length %}
                     {% for image in images %}
                         {% if image and image.cloudflareCode %}
                             <img src="https://imagedelivery.net/FfNXKd05SW9wypnlOimQoA/{{ image.cloudflareCode }}/public" 
-                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"  
+                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
                                 loading="lazy" 
-                                alt="{{ image.alt | default('Placeholder') }}"
-                                >
+                                alt="{{ image.alt | default('Placeholder') }}">
                         {% else %}
                             <img src="{{image.getUrl()}}" 
-                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"  
+                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
                                 loading="lazy" 
-                                 alt="{{ image.alt | default('Placeholder') }}"
-                                >
+                                alt="{{ image.alt | default('Placeholder') }}">
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-
-                
             </div>
         </div>
     </div>

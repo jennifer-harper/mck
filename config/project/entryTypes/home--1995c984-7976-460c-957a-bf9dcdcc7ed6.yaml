@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   56abbf82-a369-41cd-8c49-99b25961e66a:
     tabs:
@@ -35,12 +35,37 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-03-12T22:52:05+00:00'
+            elementCondition: null
+            fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86973d92-0b88-4911-bf29-78735ac68b8d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T22:50:10+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Everything displayed on the Home page comes from your Portfolio section. There is no real content here apart from adding your page Metadata'
+            type: craft\fieldlayoutelements\Tip
+            uid: 117aa3fc-03a4-4d3c-921c-c617fc91aee4
+            userCondition: null
         name: Content
         uid: c6ee2047-205a-4603-80e0-b161f4c17eb6
         userCondition: null
 handle: home
 hasTitleField: true
-icon: null
+icon: alien
 name: Home
 showSlugField: true
 showStatusField: true

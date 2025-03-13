@@ -36,6 +36,54 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-03-12T23:48:51+00:00'
+            elementCondition: null
+            fieldUid: 0c799682-a8c3-4983-99b6-8ff4394d28a9 # Subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f524328e-877c-40f9-a788-cd733361d6a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T23:22:12+00:00'
+            elementCondition: null
+            fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 170ea549-fed8-42f9-9d64-67697994f586
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-12T22:58:07+00:00'
+            elementCondition: null
+            fieldUid: 97949477-948f-44cc-b7f2-a317d8cee210 # Project Category
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81465635-7a91-4a4b-89c2-5db4f6f4148a
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-03-12T22:20:29+00:00'
             elementCondition: null
             fieldUid: 8b791e8b-5c63-4fa0-8152-1948e73f2cc6 # Main Image

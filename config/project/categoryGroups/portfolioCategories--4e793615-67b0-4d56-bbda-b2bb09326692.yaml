@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  d832c416-bf79-4b3a-bff2-4aa69cbf3412:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-12T22:52:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 76d9fa86-f460-4f34-a0f8-1262d39e164c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6a4811f0-87e7-4905-baf8-21af56e9ff09
+        userCondition: null
+handle: portfolioCategories
+name: 'Portfolio categories'
+siteSettings:
+  adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 72d7b1bb-7ad6-4430-9445-1e7d11ab6c1d

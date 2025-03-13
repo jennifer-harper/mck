@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: projectCategory
+instructions: null
+name: 'Project Category'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  source: 'group:4e793615-67b0-4d56-bbda-b2bb09326692' # Portfolio categories
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

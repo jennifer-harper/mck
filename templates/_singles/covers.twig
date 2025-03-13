@@ -1,0 +1,21 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "covers" } %} 
+{% set docTitle = entry.title %} 
+{# {% set metaDesc = entry.metaDescription %}  #}
+
+{% set brandCategory = craft.categories()
+    .group('portfolioCategories')
+    .slug('covers')
+    .one() %}
+
+{% set page = craft.entries()
+    .section('portfolio')
+    .relatedTo(brandCategory)
+    .orderBy('postDate desc')
+    .all() %}
+
+{% block content %} 
+    {% embed '_components/project-grid' %}
+    {% block bgColor %} bg-gray-800 {% endblock %}
+    {% endembed %}
+{% endblock %}

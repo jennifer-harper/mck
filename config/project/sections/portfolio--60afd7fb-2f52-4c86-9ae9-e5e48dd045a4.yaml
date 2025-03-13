@@ -24,7 +24,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _portfolio/entry.twig
-    uriFormat: 'portfolio/{slug}'
+    uriFormat: '{slug}'
 structure:
   maxLevels: null
   uid: e66446f2-f219-4295-97ed-400c10223126

@@ -3,7 +3,7 @@
 {% set docTitle = entry.title %} 
 {# {% set metaDesc = entry.metaDescription %}  #}
 
-{% set page = craft.entries().section('portfolio').with([['mainImage']]).all() %} 
+{% set page = craft.entries().section('portfolio').with([['mainImage']]).orderBy('postDate desc').all() %} 
 
 {% block content %} 
     {% embed '_components/project-grid' %}
