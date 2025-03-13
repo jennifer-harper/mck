@@ -1,9 +1,9 @@
-{% set singles = craft.entries.section('singles').all() %}
-{% set links = [
-    { 'url': siteUrl, 'label': 'Home' },
-    { 'url': '/covers', 'label': 'Covers' },
-    { 'url': '/branding', 'label': 'Branding' }
-] %}
+{# Create a category query with the 'group' parameter #}
+{% set navQuery = craft.categories()
+  .group('portfolioCategories') %}
+
+{# Fetch the categories #}
+{% set categories = navQuery.all() %}
 
 <nav class="flex flex-row items-center justify-between w-full p-[20px] bg-gray-600">
     <a class="p-[10px]" href="{{siteUrl}}">
@@ -12,16 +12,11 @@
         </svg>
     </a>
 
-<div class="flex flex-row">
-    {% for single in singles %}
-        {% set links = links | merge([ { 'url': single.url, 'label': single.title } ]) %}
-    {% endfor %}
-
-    {% for link in links %}
-        <a class="p-[10px] uppercase text-white hover:text-gray-400" href="{{ link.url }}">{{ link.label }}</a>
-    {% endfor %}
-</div>
+    <div class="flex flex-row">
+        {% nav category in categories %}
+            <a class="p-[10px] uppercase text-white hover:text-gray-400" href="{{ category.url }}">{{ category.title }}</a>
+        {% endnav %}
+        <a class="p-[10px] uppercase text-white hover:text-gray-400" href="/about">About</a>
+        <a class="p-[10px] uppercase text-white hover:text-gray-400" href="/contact">Contact</a>
+    </div>
 </nav>
-
-
-

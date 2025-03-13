@@ -35,6 +35,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-03-13T03:38:41+00:00'
+            elementCondition: null
+            fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb87b5b2-18ed-4416-8f73-38737a25a6b9
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 6a4811f0-87e7-4905-baf8-21af56e9ff09
         userCondition: null
@@ -42,9 +58,9 @@ handle: portfolioCategories
 name: 'Portfolio categories'
 siteSettings:
   adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: _categories/entry.twig
+    uriFormat: '{slug}'
 structure:
   maxLevels: null
   uid: 72d7b1bb-7ad6-4430-9445-1e7d11ab6c1d
