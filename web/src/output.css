@@ -1892,9 +1892,14 @@
       width: calc(1/2 * 100%);
     }
   }
-  .md\:w-\[50vw\] {
+  .md\:w-\[50\%\] {
     @media (width >= 48rem) {
-      width: 50vw;
+      width: 50%;
+    }
+  }
+  .md\:max-w-\[50\%\] {
+    @media (width >= 48rem) {
+      max-width: 50%;
     }
   }
   .md\:flex-row {
@@ -1932,9 +1937,14 @@
       width: calc(2/3 * 100%);
     }
   }
-  .lg\:w-\[25vw\] {
+  .lg\:w-\[25\%\] {
     @media (width >= 64rem) {
-      width: 25vw;
+      width: 25%;
+    }
+  }
+  .lg\:max-w-\[25\%\] {
+    @media (width >= 64rem) {
+      max-width: 25%;
     }
   }
   .lg\:p-\[4vw\] {
