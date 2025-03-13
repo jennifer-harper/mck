@@ -7,19 +7,21 @@
 
 @theme {
   --font-sans: 'Chakra Petch';
-  --h1-size: clamp(2em, 4vw, 7em);
-  --h2-size: clamp(1.75em, 3vw, 6em);
+  --h1-size: clamp(1.5em, 2.5vw, 6.5em);
+  --h2-size: clamp(1.3em, 1.6vw, 6em);
 }
 
 /* Apply the variables to headings */
 @layer base {
   h1 {
     font-size: var(--h1-size);
-    font-weight: 300;
+    line-height: 1.2em;
+    font-weight: light;
   }
   h2 {
     font-size: var(--h2-size);
-    font-weight: bold;
+    font-weight: light;
+    line-height: 1.2em;
   }
 }
 
