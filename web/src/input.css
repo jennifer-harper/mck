@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
 @import 'tailwindcss';
 
 .text-xl {
@@ -6,7 +6,7 @@
 }
 
 @theme {
-  --font-sans: 'PT Sans';
+  --font-sans: 'Chakra Petch';
   --h1-size: clamp(2em, 4vw, 7em);
   --h2-size: clamp(1.75em, 3vw, 6em);
 }

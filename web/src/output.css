@@ -1,9 +1,9 @@
 /*! tailwindcss v4.0.13 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: 'PT Sans';
+    --font-sans: 'Chakra Petch';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
@@ -16,6 +16,7 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --font-weight-light: 300;
     --font-weight-bold: 700;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -1068,14 +1069,32 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#011d22\] {
+    background-color: #011d22;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#ff2222\] {
+    background-color: #ff2222;
+  }
+  .bg-\[\#\{\{globals\.iconLogoColor\}\}\] {
+    background-color: #{{globals.iconLogoColor}};
+  }
+  .bg-\[\#\{\{globals\.navBgColor\}\}\] {
+    background-color: #{{globals.navBgColor}};
+  }
+  .bg-\[\#\{\{navBgColor\}\}\] {
+    background-color: #{{navBgColor}};
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-\[\{\{globals\.navBgColor\}\}\] {
+    background-color: {{globals.navBgColor}};
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
@@ -1267,6 +1286,12 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
+  .pe-\[20px\] {
+    padding-inline-end: 20px;
+  }
   .pt-\[20px\] {
     padding-top: 20px;
   }
@@ -1333,6 +1358,14 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .tracking-\[6px\] {
+    --tw-tracking: 6px;
+    letter-spacing: 6px;
   }
   .text-balance {
     text-wrap: balance;
@@ -1892,11 +1925,6 @@
       width: calc(1/2 * 100%);
     }
   }
-  .md\:w-\[50\%\] {
-    @media (width >= 48rem) {
-      width: 50%;
-    }
-  }
   .md\:max-w-\[50\%\] {
     @media (width >= 48rem) {
       max-width: 50%;
@@ -1935,11 +1963,6 @@
   .lg\:w-2\/3 {
     @media (width >= 64rem) {
       width: calc(2/3 * 100%);
-    }
-  }
-  .lg\:w-\[25\%\] {
-    @media (width >= 64rem) {
-      width: 25%;
     }
   }
   .lg\:max-w-\[25\%\] {
@@ -2100,6 +2123,10 @@
   inherits: false;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }

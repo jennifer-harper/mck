@@ -1,6 +1,6 @@
 
 
-<div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden{% block bgColor %} {% endblock %}">
+<div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
 {% if page|length %}
 {% for entry in page %} 
         <a href="{{ entry.slug }}" class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] relative group overflow-hidden">
