@@ -1,14 +1,33 @@
 headingLevels:
-  - 1
   - 2
   - 3
   - 4
   - 5
   - 6
 name: Simple
+options:
+  alignment:
+    options:
+      - left
+      - right
+  fontSize:
+    options:
+      - tiny
+      - small
+      - big
+      - huge
 toolbar:
   - heading
   - '|'
+  - alignment
+  - fontSize
+  - fontColor
   - bold
   - italic
   - link
+  - blockQuote
+  - bulletedList
+  - numberedList
+  - outdent
+  - indent
+  - horizontalLine

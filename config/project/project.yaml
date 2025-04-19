@@ -1,4 +1,4 @@
-dateModified: 1741903700
+dateModified: 1745101256
 email:
   fromEmail: mck247@gmail.com
   fromName: mck-portfolio
@@ -53,7 +53,7 @@ system:
   live: true
   name: mck-portfolio
   retryDuration: null
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: Pacific/Auckland
 users:
   allowPublicRegistration: false

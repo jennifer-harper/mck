@@ -3,8 +3,8 @@
   "prefer-stable": true,
   "require": {
     "craftcms/ckeditor": "4.6.0",
-    "craftcms/cms": "^5.0.0",
-    "craftcms/feed-me": "6.7.0",
+    "craftcms/cms": "5.7.1.1",
+    "craftcms/feed-me": "6.8.0",
     "fortrabbit/craft-copy": "^3.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
