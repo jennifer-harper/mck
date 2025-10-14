@@ -7,8 +7,17 @@
 
 {% block content %}
 
-<div class="bg-[#011d22]">
- {% include '_components/project-grid' %}
+<div>
+    <div class="bg-[#011d22]">
+    <div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
+        {% if page|length %}
+        {% for entry in page %} 
+        {% set image = entry.mainImage.one() %}
+        {% set hide = entry.showHide and 'hideContent' in entry.showHide %}
+            {% include '_components/project-grid-hide' %}
+        {% endfor %} 
+        {% endif %}
+    </div>
 </div>
 
 {% endblock %}

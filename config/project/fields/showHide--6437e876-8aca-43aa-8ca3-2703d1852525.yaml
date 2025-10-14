@@ -1,0 +1,28 @@
+columnSuffix: null
+handle: showHide
+instructions: null
+name: Show/Hide
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Hide Content'
+        -
+          - value
+          - hideContent
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

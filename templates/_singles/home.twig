@@ -3,12 +3,46 @@
 {% set docTitle = entry.title %} 
 {# {% set metaDesc = entry.metaDescription %}  #}
 
-{% set page = craft.entries().section('portfolio').with([['mainImage']]).orderBy('postDate desc').all() %} 
+{% set covers = craft.entries()
+    .section('portfolio')
+    .relatedTo({
+        targetElement: craft.categories().slug('covers').one(),
+        field: 'projectCategory'
+    })
+    .orderBy('postDate desc')
+    .all() %} 
+
+{% set branding = craft.entries()
+    .section('portfolio')
+    .relatedTo({
+        targetElement: craft.categories().slug('branding').one(),
+        field: 'projectCategory'
+    })
+    .orderBy('postDate desc')
+    .all() %} 
 
 {% block content %} 
-<div class="bg-[#011d22]">
- {% include '_components/project-grid' %}
+<div>
+    <div class="bg-[#011d22]">
+        <div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
+            {% if covers|length %}
+            {% for entry in covers %} 
+            {% set image = entry.mainImage.one() %}
+            {% set hide = entry.showHide and 'hideContent' in entry.showHide %}
+                {% include '_components/project-grid-hide' %}
+            {% endfor %} 
+            {% endif %}
+        </div>
+        <div class="w-full h-[100px] bg-pink-500 p-4">
+        </div>
+        <div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
+            {% if branding|length %}
+            {% for entry in branding %} 
+            {% set image = entry.mainImage.one() %}
+            {% set hide = entry.showHide and 'hideContent' in entry.showHide %}
+                {% include '_components/project-grid-hide' %}
+            {% endfor %} 
+            {% endif %}
+        </div>
 </div>
-   
-    
 {% endblock %}
