@@ -3,46 +3,116 @@
 {% set docTitle = entry.title %} 
 {# {% set metaDesc = entry.metaDescription %}  #}
 
-{% set covers = craft.entries()
+{# {% set covers = craft.entries()
     .section('portfolio')
     .relatedTo({
         targetElement: craft.categories().slug('covers').one(),
         field: 'projectCategory'
     })
+    .with([['mainImage']])
+    .orderBy('postDate desc')
+    .all() %}  #}
+
+{% set all = craft.entries()
+    .section('portfolio')
+    .with([['mainImage']])
     .orderBy('postDate desc')
     .all() %} 
 
-{% set branding = craft.entries()
-    .section('portfolio')
-    .relatedTo({
-        targetElement: craft.categories().slug('branding').one(),
-        field: 'projectCategory'
-    })
-    .orderBy('postDate desc')
-    .all() %} 
+
 
 {% block content %} 
 <div>
     <div class="bg-[#011d22]">
+        <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
+            {% set image = entry.logoImage.one %}
+            {% if image %}
+                <img src="{{ image.getUrl() }}" alt="" class="px-[20px] lg:px-[20vw] xl:px-[25vw]">
+            {% endif %}
+            
+
+            <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
+                {% if entry.mainHeading %} 
+                    {{entry.mainHeading}}
+                {% endif %}
+            </div>
+            <div class="p-[20px] lg:px-[25vw] xl:px-[35vw] text-balance">
+                {% if entry.smallParagraph %} 
+                    {{entry.smallParagraph}}
+                {% endif %}
+            </div>
+        </div>  
+
+        <div class="flex flex-col justify-center text-center p-[20px] lg:p-[2vw] bg-[#e8d4b7]">
+            {% if entry.smallTitle %} 
+                {{entry.smallTitle}}
+            {% endif %}
+        </div>    
+
         <div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
-            {% if covers|length %}
-            {% for entry in covers %} 
+            {% if all|length %}
+            {% for entry in all %} 
             {% set image = entry.mainImage.one() %}
             {% set hide = entry.showHide and 'hideContent' in entry.showHide %}
-                {% include '_components/project-grid-hide' %}
+            {% set special = entry.selectedProject and 'selected' in entry.selectedProject %}
+                {% if special %}
+                    {% include '_components/project-grid-hide' %}
+                {% endif %}
             {% endfor %} 
             {% endif %}
         </div>
-        <div class="w-full h-[100px] bg-pink-500 p-4">
+
+        <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
+            <div class="p-[20px] lg:px-[25vw] xl:px-[30vw] text-balance">
+                {% if entry.smallParagraph2 %} 
+                    {{entry.smallParagraph2}}
+                {% endif %}
+            </div>
+        </div>  
+
+        <div class="flex flex-col lg:flex-row justify-center text-center bg-[#b1d103] pt-[40px]  lg:py-[4vw]">
+            {% for block in entry.threeColumnParagraphs %}
+                {% if block.type == "threeColumnGroup" %}
+                <div class="px-[20px] pb-[40px] lg:pb-0 md:px-[5vw]  lg:px-[4vw]  xl:px-[7vw] flex flex-col items-center">
+                        <h3 class="pb-[20px] lg:pb-[1vw] tracking-[0.3em]"> {{ block.title }} </h3>
+                    <div class="width-full max-w-[50%] md:max-w-[100%]">{{ block.smallParagraph}}</div>
+                </div>
+                {% endif %}
+            {% endfor %}
         </div>
+
+        <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance">
+                {% if entry.smallParagraph3 %} 
+                    {{entry.smallParagraph3}}
+                {% endif %}
+            </div>
+        </div>  
+
+
         <div class="flex flex-col md:flex-row md:flex-wrap overflow-hidden">
-            {% if branding|length %}
-            {% for entry in branding %} 
+            {% if all|length %}
+            {% for entry in all %} 
             {% set image = entry.mainImage.one() %}
             {% set hide = entry.showHide and 'hideContent' in entry.showHide %}
-                {% include '_components/project-grid-hide' %}
+            {% set special = entry.selectedProject and 'selected' in entry.selectedProject %}
+                {% if not special %}
+                    {% include '_components/project-grid-hide' %}
+                {% endif %}
             {% endfor %} 
             {% endif %}
         </div>
+
+        <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance  mb-[20px] lg:mb-[.5vw]">
+                {% if entry.smallParagraph4 %} 
+                    {{entry.smallParagraph4}}
+                {% endif %}
+                
+            </div>
+            <a href="/contact" class="text-[#b1d103] uppercase tracking-[.3em]">Contact</a>
+        </div>         
+
+    </div>
 </div>
 {% endblock %}

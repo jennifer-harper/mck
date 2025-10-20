@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: threeColumnParagraphs
+instructions: null
+name: 'Three Column Paragraphs'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 42af1c04-9461-4f98-8e7d-d687f7dd6cb9 # Three Column Group
+  includeTableView: false
+  maxEntries: 3
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -37,6 +37,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-12T22:52:05+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
             handle: null
@@ -52,14 +53,153 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-03-12T22:50:10+00:00'
-            dismissible: false
+            dateAdded: '2025-10-20T01:33:09+00:00'
             elementCondition: null
-            style: tip
-            tip: 'Everything displayed on the Home page comes from your Portfolio section. There is no real content here apart from adding your page Metadata'
-            type: craft\fieldlayoutelements\Tip
-            uid: 117aa3fc-03a4-4d3c-921c-c617fc91aee4
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 71b22ee7-2ddd-4058-ae78-a281d84d5961
             userCondition: null
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 10720a81-0ac5-47a2-9041-ad1a16bfd3d2 # Logo Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a6b8308-34aa-48d5-8428-67f65ef00ce4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 92a692c0-41b1-49fe-a284-92f3c2587058 # Main Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30f8c8e5-8b85-4258-8034-c14eeee6f33a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 286cd808-716e-48a7-9f1c-b103ac1e5cb2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 8d77d4cd-e53c-4edf-98aa-71ca5537d09a
+            userCondition: null
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03daee30-7887-47f7-a8ca-586f229f0245 # Small Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96848b9a-900d-4192-871c-563804f2a8c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: smallParagraph2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9420b752-9e98-4c46-bd22-65fe8ffd637a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:46:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: aa207a96-2efd-45a3-8111-a43bcc9d7ead # Three Column Paragraphs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a3ac584-a829-4f6f-8e8b-9afa47da7a5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: smallParagraph3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c341a047-7ce3-4b0c-98cc-009fadb26138
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: smallParagraph4
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d117ad08-4ef0-4c35-9df9-6fe6a5b0f1c9
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: c6ee2047-205a-4603-80e0-b161f4c17eb6
         userCondition: null

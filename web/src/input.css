@@ -9,6 +9,7 @@
   --font-sans: 'Chakra Petch';
   --h1-size: clamp(1.5em, 2.5vw, 6.5em);
   --h2-size: clamp(1.3em, 1.6vw, 6em);
+  --p-size: clamp(1em, 1vw, 2em);
 }
 
 /* Apply the variables to headings */
@@ -20,6 +21,11 @@
   }
   h2 {
     font-size: var(--h2-size);
+    font-weight: light;
+    line-height: 1.2em;
+  }
+  p {
+    font-size: var(--p-size);
     font-weight: light;
     line-height: 1.2em;
   }

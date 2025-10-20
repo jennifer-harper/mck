@@ -1,0 +1,68 @@
+color: null
+fieldLayouts:
+  608975c1-ce57-448c-ac9d-2820d8c314b5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-20T01:34:08+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ba06c84a-f851-446c-8291-4843e353535d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-20T01:35:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a27be32d-324a-4412-b7a1-549a96a97802
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 871c3426-c612-494c-ae05-d05a773c9b2b
+        userCondition: null
+handle: threeColumnGroup
+hasTitleField: true
+icon: null
+name: 'Three Column Group'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
