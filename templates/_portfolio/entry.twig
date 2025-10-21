@@ -4,39 +4,121 @@
 {% set metaDesc = entry.metaDescription %} 
 
 {% block content %} 
-    <div class="p-[20px] lg:p-[4vw]">
-        <div class="w-full pb-[5%]">
-            
-        </div>
+    <div class="">
 
-        <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 lg:w-[40%] md:pe-[6%] pb-[20px] md:pb-0">
-                {% if entry.title %} 
-                    <h1 class="uppercase mb-[20px]">{{entry.title}}</h1>
-                {% endif %} 
-                {% if entry.projectSummary %} 
-                    {{entry.projectSummary}}
+        <div class="flex flex-col justify-center text-center lg:pt-[8vw]  lg:pb-[6vw] bg-[#e8d4b7]">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
+                {% if entry.mainHeading %} 
+                    {{entry.mainHeading}}
                 {% endif %}
             </div>
-             <div class="w-full md:w-1/2 lg:w-[60%]">
-                {% set images = entry.projectImages %}
-                {% if images | length %}
-                    {% for image in images %}
-                        {% if image and image.cloudflareCode %}
-                            <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
-                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
-                                loading="lazy" 
-                                alt="{{ image.alt | default('Placeholder') }}">
-                        {% else %}
-                            <img src="{{image.getUrl()}}" 
-                                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
-                                loading="lazy" 
-                                alt="{{ image.alt | default('Placeholder') }}">
+            <div class="p-[20px] lg:px-[25vw] xl:px-[35vw] uppercase">
+                {% if entry.smallTitle %} 
+                    {{entry.smallTitle}}
+                {% endif %}
+            </div>
+        </div>  
+
+
+        <div class="">
+            {% for section in entry.projectPageGenerator %}
+                {% if section.type == "sectionSelector" %}
+               
+
+                    <div class="section-selector text-center 
+                    {% if 'backgroundDark' in section.backgroundDark %}
+                         bg-amber-200 p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[6vw]
+                    {% else %} 
+                        p-[20px] md:px-[8vw]  lg:px-[10vw] 
+                    {% endif %}">
+
+                        {# Optional text field inside this section #}
+                        {% if section.textEditor %}
+                            {% set hasSibling = (section.imageTitle | length) or (section.galleryTitle | length) %}
+                            <div class="p-0{% if hasSibling %} mb-[20px] md:mb-[4vw]{% endif %}">
+                                {{ section.textEditor }}
+                            </div>
                         {% endif %}
-                    {% endfor %}
+
+                        {# Loop through the nested matrix inside this section #}
+                         <div class="flex flex-col md:flex-row">
+                            {% for imgBlock in section.imageTitle %}
+                                {% if imgBlock.type == "projectImgTitleGroup" %}
+                                <div class="w-full flex flex-col md:flex-row md:content-center py-[20px] md:p-0">
+                                    <div class="w-full flex flex-col items-center">
+                                        {% if imgBlock.smallTitle %}
+                                            <h3>{{ imgBlock.smallTitle }}</h3>
+                                        {% endif %}
+
+                                        {% set images = imgBlock.image %}
+                                        {% if images | length %}
+                                            {% for image in images %}
+                                                {% if image and image.cloudflareCode %}
+                                                <div class="w-full md:max-w-[50%]">
+                                                    <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
+                                                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] md:pb-0"  
+                                                        loading="lazy" 
+                                                        alt="{{ image.alt | default('Placeholder') }}">
+                                                </div> 
+                                                {% else %}
+                                                <div class="w-full md:max-w-[50%]">
+                                                    <img src="{{image.getUrl()}}" 
+                                                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]  md:pb-0"  
+                                                        loading="lazy" 
+                                                        alt="{{ image.alt | default('Placeholder') }}">
+                                                </div> 
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        {# Loop through the nested matrix inside this section #}
+                         <div class="flex flex-col">
+                            {% for galBlock in section.galleryTitle %}
+                                {% if galBlock.type == "projectGalleryGroup" %}
+
+                                    <div class="py-[20px] md:py-[2vw] lg:py-[3vw]">
+                                        {% if galBlock.title %}
+                                            <h3>{{ galBlock.title }}</h3>
+                                        {% endif %}
+                                    
+                                        <div class="flex flex-col md:flex-row ">
+                                        
+                                            {% set images = galBlock.projectImages %}
+                                            {% if images | length %}
+                                                {% for image in images %}
+                                                    {% if image and image.cloudflareCode %}
+                                                    <div class="w-full md:max-w-[50%] lg:max-w-[25%]">
+                                                        <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
+                                                            loading="lazy" 
+                                                            alt="{{ image.alt | default('Placeholder') }}">
+                                                    </div> 
+                                                    {% else %}
+                                                    <div class="w-full md:max-w-[50%] lg:max-w-[25%]">
+                                                        <img src="{{image.getUrl()}}" 
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
+                                                            loading="lazy" 
+                                                            alt="{{ image.alt | default('Placeholder') }}">
+                                                    </div> 
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div> 
+                                    </div> 
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
                 {% endif %}
-            </div>
-        </div>
+            {% endfor %}
+        </div> 
+
+        
+       
     </div>
 
 {% endblock %}

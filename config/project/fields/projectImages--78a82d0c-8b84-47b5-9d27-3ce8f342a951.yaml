@@ -11,6 +11,7 @@ settings:
     - image
     - pdf
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:e84480ee-4abb-457c-beb5-c36dd5fee591' # Images
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
@@ -24,7 +25,7 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: galleryTitle
+instructions: null
+name: 'Option: Gallery with Title'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 8681edca-5eda-4f29-af5e-86cafb6b92cf # Project Gallery Group
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

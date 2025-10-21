@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: projectPageGenerator
+instructions: null
+name: 'Project Page Generator'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 91bb405a-4342-4ac7-8809-62d615a8b0c8 # Section Selector
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

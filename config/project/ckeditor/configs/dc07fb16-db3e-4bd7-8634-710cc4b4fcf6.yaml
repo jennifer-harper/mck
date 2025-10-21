@@ -1,0 +1,7 @@
+headingLevels:
+  - 1
+name: 'H1 heading'
+toolbar:
+  - bold
+  - italic
+  - link

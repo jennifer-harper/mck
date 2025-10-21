@@ -1,0 +1,89 @@
+color: lime
+fieldLayouts:
+  9ed30653-b51a-42a8-afc8-7d70d9ec1f82:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-21T01:13:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 02164f0b-f429-44e3-a674-e028008b0b52 # Background Dark
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a2dc151-3be9-4093-a839-3a5d22f02ef5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T00:24:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d12655eb-9aeb-4d71-9c79-103e6db41e3c # Option: Text Editor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9042a217-565b-4735-999e-c337e007e6e7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T00:37:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3b3b4f6f-6498-4241-8459-4d1be84cbb33 # Option: Image with Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77a6bbeb-88d6-485f-8a75-0fcaec08c905
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T01:00:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 070a72f2-8c6a-43b7-b10b-753a0843d521 # Option: Gallery with Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49d2e6f4-63b9-4554-8d6d-8a30fe5c492e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7b74bc58-15e8-40e3-a05a-4d998eb9d876
+        userCondition: null
+handle: sectionSelector
+hasTitleField: false
+icon: alien
+name: 'Section Selector'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

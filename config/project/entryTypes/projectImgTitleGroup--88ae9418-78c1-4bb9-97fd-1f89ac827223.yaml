@@ -1,0 +1,55 @@
+color: emerald
+fieldLayouts:
+  a869a75b-d5d1-49c5-ba1e-a10151ca4635:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-21T00:33:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03daee30-7887-47f7-a8ca-586f229f0245 # Small Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89dc0ee4-7e86-4167-9c66-ab825900e31c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T00:48:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 641c0e0d-feb0-4495-ad88-3ee089ea0fe4 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 366894c2-080e-44cc-8da9-0dbbb9c6e7ce
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d124b6af-0541-4000-b6e8-595cf46bf120
+        userCondition: null
+handle: projectImgTitleGroup
+hasTitleField: false
+icon: alien
+name: 'Project Img Title Group'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: imageTitle
+instructions: null
+name: 'Option: Image with Title'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 88ae9418-78c1-4bb9-97fd-1f89ac827223 # Project Img Title Group
+  includeTableView: false
+  maxEntries: 2
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
