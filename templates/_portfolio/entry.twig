@@ -6,7 +6,7 @@
 {% block content %} 
     <div class="">
 
-        <div class="flex flex-col justify-center text-center lg:pt-[8vw]  lg:pb-[6vw] bg-[#e8d4b7]">
+        <div class="flex flex-col justify-center text-center lg:pt-[8vw]  lg:pb-[6vw]"  style="background-color: #{{ globals.lightBackground }};">
             <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
                 {% if entry.mainHeading %} 
                     {{entry.mainHeading}}
@@ -20,69 +20,77 @@
         </div>  
 
 
-        <div class="">
+
+        <div class="pb-[40px] md:pb-[4vw] lg:pb-[6vw]">
             {% for section in entry.projectPageGenerator %}
                 {% if section.type == "sectionSelector" %}
                
-
+                    {# Set what the section background looks like py is top/bottom#}
                     <div class="section-selector text-center 
-                    {% if 'backgroundDark' in section.backgroundDark %}
-                         bg-amber-200 p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[6vw]
-                    {% else %} 
-                        p-[20px] md:px-[8vw]  lg:px-[10vw] 
-                    {% endif %}">
+                         {% if 'backgroundDark' in section.backgroundDark %}
+                            p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[6vw] lg:py-[8vw] text-white
+                        {% else %} 
+                            p-[20px] md:px-[8vw] lg:px-[10vw] md:pt-[6vw] lg:pt-[8vw]
+                        {% endif %}"
+                        {% if 'backgroundDark' in section.backgroundDark %}
+                            style="background-color: #{{ globals.darkBackground }};"
+                        {% endif %}>
 
                         {# Optional text field inside this section #}
                         {% if section.textEditor %}
                             {% set hasSibling = (section.imageTitle | length) or (section.galleryTitle | length) %}
-                            <div class="p-0{% if hasSibling %} mb-[20px] md:mb-[4vw]{% endif %}">
-                                {{ section.textEditor }}
+                            <div class="text-balance flex flex-row justify-center {% if hasSibling %}p-0 md:pb-[4vw] lg:pb-[6vw]{% else %}p-0 md:pb-0 lg:pb-0{% endif %}">
+                                <div class="lg:max-w-[50%] ">{{ section.textEditor }}</div>
                             </div>
                         {% endif %}
 
                         {# Loop through the nested matrix inside this section #}
-                         <div class="flex flex-col md:flex-row">
+                        <div class="flex flex-col md:flex-row">
                             {% for imgBlock in section.imageTitle %}
                                 {% if imgBlock.type == "projectImgTitleGroup" %}
-                                <div class="w-full flex flex-col md:flex-row md:content-center py-[20px] md:p-0">
-                                    <div class="w-full flex flex-col items-center">
-                                        {% if imgBlock.smallTitle %}
-                                            <h3>{{ imgBlock.smallTitle }}</h3>
-                                        {% endif %}
 
-                                        {% set images = imgBlock.image %}
-                                        {% if images | length %}
-                                            {% for image in images %}
-                                                {% if image and image.cloudflareCode %}
-                                                <div class="w-full md:max-w-[50%]">
-                                                    <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
-                                                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] md:pb-0"  
-                                                        loading="lazy" 
-                                                        alt="{{ image.alt | default('Placeholder') }}">
-                                                </div> 
-                                                {% else %}
-                                                <div class="w-full md:max-w-[50%]">
-                                                    <img src="{{image.getUrl()}}" 
-                                                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]  md:pb-0"  
-                                                        loading="lazy" 
-                                                        alt="{{ image.alt | default('Placeholder') }}">
-                                                </div> 
-                                                {% endif %}
-                                            {% endfor %}
-                                        {% endif %}
+                                    {% set hasGallery = section.galleryTitle | length %}
+                                    <div class="w-full flex flex-col md:flex-row md:content-center py-[20px] md:p-0 {% if hasGallery %} p-0 md:pb-[4vw] lg:pb-[6vw]{% else %} p-0 md:ptb-0 lg:pb-0{% endif %}">
+                                        <div class="w-full flex flex-col items-center">
+                                            {% if imgBlock.smallTitle %}
+                                                <h3 class="uppercase tracking-[.3em] mb-[20px] lg:mb-[2vw]">{{ imgBlock.smallTitle }}</h3>
+                                            {% endif %}
+
+                                            {% set images = imgBlock.image %}
+                                            {% if images | length %}
+                                                {% for image in images %}
+                                                    {% if image and image.cloudflareCode %}
+                                                    <div class="w-full md:max-w-[50%]">
+                                                        <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] lg:pb-0"  
+                                                            loading="lazy" 
+                                                            alt="{{ image.alt | default('Placeholder') }}">
+                                                    </div> 
+                                                    {% else %}
+                                                    <div class="w-full md:max-w-[50%]">
+                                                        <img src="{{ image.getUrl() }}" 
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] lg:pb-0"  
+                                                            loading="lazy" 
+                                                            alt="{{ image.alt | default('Placeholder') }}">
+                                                    </div> 
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
                                     </div>
-                                </div>
+
                                 {% endif %}
                             {% endfor %}
                         </div>
+
                         {# Loop through the nested matrix inside this section #}
                          <div class="flex flex-col">
                             {% for galBlock in section.galleryTitle %}
                                 {% if galBlock.type == "projectGalleryGroup" %}
 
-                                    <div class="py-[20px] md:py-[2vw] lg:py-[3vw]">
+                                    <div class="">
                                         {% if galBlock.title %}
-                                            <h3>{{ galBlock.title }}</h3>
+                                            <h3 class="uppercase tracking-[.3em] mb-[20px] lg:mb-[2vw]">{{ galBlock.title }}</h3>
                                         {% endif %}
                                     
                                         <div class="flex flex-col md:flex-row ">
@@ -93,14 +101,14 @@
                                                     {% if image and image.cloudflareCode %}
                                                     <div class="w-full md:max-w-[50%] lg:max-w-[25%]">
                                                         <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public" 
-                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] lg:pb-0"  
                                                             loading="lazy" 
                                                             alt="{{ image.alt | default('Placeholder') }}">
                                                     </div> 
                                                     {% else %}
                                                     <div class="w-full md:max-w-[50%] lg:max-w-[25%]">
                                                         <img src="{{image.getUrl()}}" 
-                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px]"  
+                                                            class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full pb-[20px] lg:pb-0"  
                                                             loading="lazy" 
                                                             alt="{{ image.alt | default('Placeholder') }}">
                                                     </div> 
@@ -117,7 +125,21 @@
             {% endfor %}
         </div> 
 
-        
+       
+        {# {% for block in entry.ctaSection %}
+            {% if block.type == "buttonGroup" %}
+                    <div style="background-color: #{{ globals.darkBackground }};" class="w-full text-center text-white mt-[20px] md:mt-[6vw] lg:mt-[8vw] 
+                    p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[3vw] lg:py-[4vw] text-balance">
+                    <div class=" mb-[20px] lg:mb-[1vw]">{{ block.smallParagraph}}</div>
+                    {% if block.pageLink.one() %}
+                        <a href="{{ block.pageLink.one().url }}" class="uppercase tracking-[.3em]" style="color:#{{ globals.contrastColorOne }};">
+                            {{ block.buttonText }}
+                        </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %} #}
+       
        
     </div>
 

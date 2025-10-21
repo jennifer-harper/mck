@@ -1,0 +1,72 @@
+color: null
+fieldLayouts:
+  f875523f-e7f5-48d1-b0a0-78b0f29dff35:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-21T06:46:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 823c5b7d-b67a-4477-ad30-9d5e3b06b05f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T06:40:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 56d55d7a-02b1-489a-943b-58bf37f8604d # Button Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46586b59-df8d-4fa6-957f-fa1daa2bd6f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T06:40:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5e99c00d-22f0-4897-bb88-76356733085e # Page Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14e31f54-12b6-4a5e-b8bb-3a9fa6a7ac8d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 80c05395-654e-4d9c-b42d-e4657b08f820
+        userCondition: null
+handle: buttonGroup
+hasTitleField: false
+icon: null
+name: 'Button Group'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

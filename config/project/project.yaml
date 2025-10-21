@@ -1,4 +1,4 @@
-dateModified: 1761017714
+dateModified: 1761032249
 email:
   fromEmail: mck247@gmail.com
   fromName: mck-portfolio
@@ -18,12 +18,14 @@ meta:
     3b3b4f6f-6498-4241-8459-4d1be84cbb33: 'Option: Image with Title' # Option: Image with Title
     03daee30-7887-47f7-a8ca-586f229f0245: 'Small Title' # Small Title
     4e793615-67b0-4d56-bbda-b2bb09326692: 'Portfolio categories' # Portfolio categories
+    5e99c00d-22f0-4897-bb88-76356733085e: 'Page Link' # Page Link
     8a45ed1b-1d05-417c-8995-22819186d6e7: Contact # Contact
     8b791e8b-5c63-4fa0-8152-1948e73f2cc6: 'Main Image' # Main Image
     41a7fcd5-1881-4456-90f7-912fc3e1b1d2: 'Project Page Generator' # Project Page Generator
     42af1c04-9461-4f98-8e7d-d687f7dd6cb9: 'Three Column Group' # Three Column Group
     46a84ffe-dd69-4412-8324-1b21c3034e18: Globals # Globals
     47c96c33-bfd0-461d-be6d-02f5e52fa448: 'Project Summary' # Project Summary
+    56d55d7a-02b1-489a-943b-58bf37f8604d: 'Button Text' # Button Text
     60afd7fb-2f52-4c86-9ae9-e5e48dd045a4: Portfolio # Portfolio
     070a72f2-8c6a-43b7-b10b-753a0843d521: 'Option: Gallery with Title' # Option: Gallery with Title
     78a82d0c-8b84-47b5-9d27-3ce8f342a951: 'Project Images' # Project Images
@@ -32,6 +34,7 @@ meta:
     92a692c0-41b1-49fe-a284-92f3c2587058: 'Main Heading' # Main Heading
     141eed56-c095-45f6-bea3-79a3e9706f28: 'Option: Text Group' # Option: Text Group
     641c0e0d-feb0-4495-ad88-3ee089ea0fe4: Image # Image
+    795d4947-4f94-4e07-bd29-1d9ba034df6f: 'Contrast Color One' # Contrast Color One
     1445dbd5-ccef-4fa3-9056-0b8415192dc8: Home # Home
     1995c984-7976-460c-957a-bf9dcdcc7ed6: Home # Home
     02164f0b-f429-44e3-a674-e028008b0b52: 'Background Dark' # Background Dark
@@ -40,20 +43,24 @@ meta:
     8681edca-5eda-4f29-af5e-86cafb6b92cf: 'Project Gallery Group' # Project Gallery Group
     10720a81-0ac5-47a2-9041-ad1a16bfd3d2: 'Logo Image' # Logo Image
     51718e75-a15c-4e6b-ae2c-d679d53e2a4f: 'Small paragraph' # Small paragraph
+    095514b1-01ca-4d65-9813-df13cb60d7e5: 'Button Group' # Button Group
     9171106b-0dd1-4f50-866a-16cb06075f29: mck-portfolio # mck-portfolio
     97949477-948f-44cc-b7f2-a317d8cee210: 'Project Category' # Project Category
     a3af5e7e-0592-4f0b-9596-9b39d9b73480: About # About
+    a6b4cab3-968d-4280-b479-e59974e4246b: 'Light Background' # Light Background
     aa207a96-2efd-45a3-8111-a43bcc9d7ead: 'Three Column Paragraphs' # Three Column Paragraphs
     adc00353-c591-4ccc-b163-e71f6d107da9: mck-portfolio # mck-portfolio
     b5cd9e3a-8224-43de-83ef-798e14b34f2e: 'Meta Description' # Meta Description
+    b6a36496-9170-4b27-8f32-98997a1007fd: 'CTA section' # CTA section
     b7d11927-833c-4c91-bb04-75361058ee4a: 'Icon Logo Color' # Icon Logo Color
+    b76e7a66-aa7a-4bd5-b88d-428bf3afc249: 'Contrast Color Two' # Contrast Color Two
     bde027f6-27be-4d50-89fb-9f3a4a622559: Simple # Simple
     cf83c8fd-a311-41ab-8250-a4950a149f6d: 'Cloudflare Code' # Cloudflare Code
     d12655eb-9aeb-4d71-9c79-103e6db41e3c: 'Option: Text Editor' # Option: Text Editor
     dc07fb16-db3e-4bd7-8634-710cc4b4fcf6: 'H1 heading' # H1 heading
     e968b423-4e4c-4c01-9fb0-d78e51195caf: 'Selected Project' # Selected Project
     e84480ee-4abb-457c-beb5-c36dd5fee591: Images # Images
-    efd30ae7-28bd-4dd4-a8ae-b2d92630d410: 'Body BG Color' # Body BG Color
+    efd30ae7-28bd-4dd4-a8ae-b2d92630d410: 'Dark Background' # Dark Background
 plugins:
   ckeditor:
     edition: standard

@@ -5,7 +5,17 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-10-21T07:07:19+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Use Hex colours, don''t include the #'
+            type: craft\fieldlayoutelements\Tip
+            uid: cb516da5-2b75-406a-8053-90b9d35a88cb
+            userCondition: null
+          -
             dateAdded: '2025-03-13T21:18:07+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: b7d11927-833c-4c91-bb04-75361058ee4a # Icon Logo Color
             handle: null
@@ -20,6 +30,83 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-10-21T07:04:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: efd30ae7-28bd-4dd4-a8ae-b2d92630d410 # Dark Background
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e8b2297-107b-4fb7-9940-fa252df97fbc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T07:07:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a6b4cab3-968d-4280-b479-e59974e4246b # Light Background
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1582e968-d987-4b3e-999b-22eff02ba890
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T07:07:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 795d4947-4f94-4e07-bd29-1d9ba034df6f # Contrast Color One
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7136e366-bcc8-444d-85f2-a4610461c85a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T07:07:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b76e7a66-aa7a-4bd5-b88d-428bf3afc249 # Contrast Color Two
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bf3a340-c170-4caa-a18e-f92872d6df6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-21T07:07:19+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: ''
+            type: craft\fieldlayoutelements\Tip
+            uid: fe32b3b3-7f3e-43c6-84c1-e080dfe9c66b
+            userCondition: null
         name: Nvaigation
         uid: 5c79d6cc-3a02-45f9-9baa-1cd4ca313ebb
         userCondition: null

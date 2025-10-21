@@ -23,7 +23,7 @@
 
 {% block content %} 
 <div>
-    <div class="bg-[#011d22]">
+    <div style="background-color: #{{ globals.darkBackground }};">
         <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
             {% set image = entry.logoImage.one %}
             {% if image %}
@@ -43,7 +43,7 @@
             </div>
         </div>  
 
-        <div class="flex flex-col justify-center text-center p-[20px] lg:p-[2vw] bg-[#e8d4b7]">
+        <div class="flex flex-col justify-center text-center p-[20px] lg:p-[2vw]" style="background-color: #{{ globals.lightBackground }};">
             {% if entry.smallTitle %} 
                 {{entry.smallTitle}}
             {% endif %}
@@ -70,7 +70,7 @@
             </div>
         </div>  
 
-        <div class="flex flex-col lg:flex-row justify-center text-center bg-[#b1d103] pt-[40px]  lg:py-[4vw]">
+        <div class="flex flex-col lg:flex-row justify-center text-center  pt-[40px]  lg:py-[4vw]" style="background-color: #{{ globals.contrastColorOne }};">
             {% for block in entry.threeColumnParagraphs %}
                 {% if block.type == "threeColumnGroup" %}
                 <div class="px-[20px] pb-[40px] lg:pb-0 md:px-[5vw]  lg:px-[4vw]  xl:px-[7vw] flex flex-col items-center">
@@ -104,13 +104,12 @@
         </div>
 
         <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
-            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance  mb-[20px] lg:mb-[.5vw]">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance  mb-[20px] lg:mb-[1vw]">
                 {% if entry.smallParagraph4 %} 
                     {{entry.smallParagraph4}}
                 {% endif %}
-                
             </div>
-            <a href="/contact" class="text-[#b1d103] uppercase tracking-[.3em]">Contact</a>
+            <a href="/contact" class="uppercase tracking-[.3em]" style="color:#{{ globals.contrastColorOne }};">Contact</a>
         </div>         
 
     </div>
