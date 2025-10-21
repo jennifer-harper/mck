@@ -26,15 +26,7 @@
                 {% if section.type == "sectionSelector" %}
                
                     {# Set what the section background looks like py is top/bottom#}
-                    <div class="section-selector text-center 
-                         {% if 'backgroundDark' in section.backgroundDark %}
-                            p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[6vw] lg:py-[8vw] text-white
-                        {% else %} 
-                            p-[20px] md:px-[8vw] lg:px-[10vw] md:pt-[6vw] lg:pt-[8vw]
-                        {% endif %}"
-                        {% if 'backgroundDark' in section.backgroundDark %}
-                            style="background-color: #{{ globals.darkBackground }};"
-                        {% endif %}>
+                    <div class="section-selector text-center {% if 'backgroundDark' in section.backgroundDark %} p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[6vw] lg:py-[8vw] text-white {% else %} p-[20px] md:px-[8vw] lg:px-[10vw] md:pt-[6vw] lg:pt-[8vw]{% endif %} " {% if 'backgroundDark' in section.backgroundDark %} style="background-color:#{{ globals.darkBackground }};"{% endif %} >
 
                         {# Optional text field inside this section #}
                         {% if section.textEditor %}
