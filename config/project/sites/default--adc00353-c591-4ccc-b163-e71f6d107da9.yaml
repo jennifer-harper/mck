@@ -2,7 +2,7 @@ baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true
-language: en-US
+language: en-NZ
 name: mck-portfolio
 primary: true
 siteGroup: 9171106b-0dd1-4f50-866a-16cb06075f29 # mck-portfolio

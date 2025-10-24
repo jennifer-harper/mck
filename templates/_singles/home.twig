@@ -33,7 +33,7 @@
 
             <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
                 {% if entry.mainHeading %} 
-                    {{entry.mainHeading}}
+                   <h1> {{entry.mainHeading}}</h1>
                 {% endif %}
             </div>
             <div class="p-[20px] lg:px-[25vw] xl:px-[35vw] text-balance">
@@ -45,7 +45,7 @@
 
         <div class="flex flex-col justify-center text-center p-[20px] lg:p-[2vw]" style="background-color: #{{ globals.lightBackground }};">
             {% if entry.smallTitle %} 
-                {{entry.smallTitle}}
+               <h2> {{entry.smallTitle}}</h2>
             {% endif %}
         </div>    
 
@@ -74,7 +74,7 @@
             {% for block in entry.threeColumnParagraphs %}
                 {% if block.type == "threeColumnGroup" %}
                 <div class="px-[20px] pb-[40px] lg:pb-0 md:px-[5vw]  lg:px-[4vw]  xl:px-[7vw] flex flex-col items-center">
-                        <h3 class="pb-[20px] lg:pb-[1vw] tracking-[0.3em]"> {{ block.title }} </h3>
+                        <h2 class="pb-[20px] lg:pb-[1vw]"> {{ block.title }} </h2>
                     <div class="width-full max-w-[50%] md:max-w-[100%]">{{ block.smallParagraph}}</div>
                 </div>
                 {% endif %}
@@ -109,9 +109,18 @@
                     {{entry.smallParagraph4}}
                 {% endif %}
             </div>
-            <a href="/contact" class="uppercase tracking-[.3em]" style="color:#{{ globals.contrastColorOne }};">Contact</a>
+           <a href="/contact" class="contactBtn uppercase tracking-[.3em]" style="--hover-color:#{{ globals.contrastColorOne }};">
+            Contact
+            </a>
         </div>         
 
     </div>
 </div>
+
+<style>
+
+</style>
 {% endblock %}
+
+
+

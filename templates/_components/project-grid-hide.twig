@@ -1,5 +1,5 @@
 {% if hide %}
-    <div class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] xl:max-w-[20%] xl:h-[20vw]  relative group overflow-hidden">
+    <div class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw]  relative group overflow-hidden">
         <div class="media-box">
             {% if image %}
                 <img src="{{ image.getUrl() }}"
@@ -11,7 +11,7 @@
         </div>
     </div>
 {% else %}
-    <a href="{{ entry.url }}" class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] xl:max-w-[20%] xl:h-[20vw] relative group overflow-hidden">
+    <a href="{{ entry.url }}" class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] relative group overflow-hidden">
         <div class="media-box">
         {% if image %}
             <img src="{{ image.getUrl() }}"
