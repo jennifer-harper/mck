@@ -22,8 +22,8 @@
 
 
 {% block content %} 
-    <div style="background-color: #{{ globals.darkBackground }};  pt-[100px] lg:pt-[6vw]">
-        <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
+    <div style="background-color: #{{ globals.darkBackground }};">
+        <div class="flex flex-col justify-center text-center text-white p-[20px] pt-[100px] lg:pt-[12vw]  lg:pb-[6vw]">
             {% set image = entry.logoImage.one %}
             {% if image %}
                 <img src="{{ image.getUrl() }}" alt="" class="px-[20px] lg:px-[20vw] xl:px-[25vw]">

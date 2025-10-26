@@ -4,9 +4,9 @@
 {% set metaDesc = entry.metaDescription %} 
 
 {% block content %} 
-    <div class="">
+    <div class="project-entry">
 
-        <div class="flex flex-col justify-center text-center pb-[80px] pt-[180px] md:pt-[16vw] md:pb-[8vw]"  style="background-color: #{{ globals.lightBackground }};">
+        <div class="flex flex-col justify-center text-center pb-[80px] pt-[140px] md:pt-[16vw] md:pb-[8vw]"  style="background-color: #{{ globals.lightBackground }};">
             <div class="lg:px-[15vw] xl:px-[20vw] mb-[20px] md:mb-[1vw] text-balance">
                 {% if entry.mainHeading %} 
                    <h1> {{entry.mainHeading}}</h1>
@@ -21,18 +21,30 @@
 
 
 
-        <div class="px-[20px] pb-[40px] md:px-0 md:pb-[4vw] lg:pb-[6vw]">
+        <div class="pb-[40px] md:px-0 md:pb-[4vw] lg:pb-[6vw]">
             {% for section in entry.projectPageGenerator %}
                 {% if section.type == "sectionSelector" %}
-               
+
+                    {# Determine extra classes for the first section #}
+                    {# {% set extraPadding = loop.first ? 'pt-[100px] lg:pt-[8vw]' : '' %} #}
+
+
                     {# Set what the section background looks like py is top/bottom#}
-                    <div class="section-selector text-center {% if 'backgroundDark' in section.backgroundDark %} py-[40px] px-[20px]  md:px-[8vw] lg:px-[10vw] md:py-[6vw] lg:py-[8vw] text-white {% else %} py-[40px] px-[20px] md:px-[8vw] lg:px-[10vw] md:pt-[6vw] lg:pt-[8vw]{% endif %} " {% if 'backgroundDark' in section.backgroundDark %} style="background-color:#{{ globals.darkBackground }};"{% endif %} >
+                    <div class="section-selector text-center 
+                        {% if 'backgroundDark' in section.backgroundDark %} 
+                            pt-[100px] px-[20px]  md:px-[8vw] lg:px-[10vw] md:py-[10vw] lg:py-[8vw] text-white  
+                        {% else %} 
+                            pt-[100px] px-[20px] md:px-[8vw] lg:px-[10vw] md:pt-[10vw] lg:pt-[8vw]  
+                        {% endif %} " 
+                        {% if 'backgroundDark' in section.backgroundDark %} style="background-color:#{{ globals.darkBackground }};"{% endif %} >
 
                         {# Optional text field inside this section #}
                         {% if section.textEditor %}
                             {% set hasSibling = (section.imageTitle | length) or (section.galleryTitle | length) %}
-                            <div class="text-pretty flex flex-row justify-center {% if hasSibling %} p-0 pb-[40px] md:pb-[4vw] lg:pb-[6vw]{% else %}p-0 md:pb-0 lg:pb-0{% endif %}">
-                                <div class="text-balance">{{ section.textEditor }}</div>
+                            <div class="text-pretty flex flex-row justify-center {% if hasSibling %} p-0 pb-[40px] md:pb-[4vw] lg:pb-[6vw]
+                        {% else %}
+                            p-0 md:pb-0 lg:pb-0{% endif %}">
+                            <div class="text-balance">{{ section.textEditor }}</div>
                             </div>
                         {% endif %}
 
@@ -74,8 +86,6 @@
                                 {% endif %}
                             {% endfor %}
                         </div>
-
-                        
 
                         {# Loop through the nested matrix inside this section #}
                          <div class="flex flex-col">
@@ -127,3 +137,4 @@
     </div>
 
 {% endblock %}
+
