@@ -1,23 +1,46 @@
 {# Create a category query with the 'group' parameter #}
-{% set navQuery = craft.categories()
-  .group('portfolioCategories') %}
-
-{# Fetch the categories #}
+{% set navQuery = craft.categories().group('portfolioCategories') %}
 {% set categories = navQuery.all() %}
-
 
 {% macro navLink(text, url) %}
   <a 
     href="{{ url }}" 
-    class="navLinks p-[10px] uppercase text-gray-400 font-light tracking-[6px]" 
+    class="block p-[20px] text-center uppercase text-gray-400 font-light tracking-[6px] hover:text-[var(--hover-color)] transition-colors duration-300"
     style="--hover-color:#{{ globals.contrastColorOne }};">
     {{ text }}
   </a>
 {% endmacro %}
 
-<nav class="flex flex-col lg:flex-row items-center justify-between w-full px-[20px] py-[10px] md:px-[3vw] bg-[#011d22]">
-  <div class="flex flex-row justify-between w-full flex-wrap">
-    {{ _self.navLink('Home', '/') }}
+<nav class="bg-[#011d22] px-[20px] md:px-[3vw] py-[10px] relative z-50 flex">
+  <div class="flex items-center justify-between w-full z-100 relative">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0">
+      <img src="../uploads/images/logo.svg" alt="Logo" class="h-[40px]">
+    </a>
+
+    <!-- Hamburger Button -->
+    <button id="menu-toggle" 
+      class="lg:hidden text-gray-400 hover:text-[var(--hover-color)] focus:outline-none" 
+      aria-label="Toggle menu" 
+      style="--hover-color:#{{ globals.contrastColorOne }};">
+      <!-- Hamburger icon -->
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" 
+        class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close icon -->
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" 
+        class="h-6 w-6 stroke-current hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+        <path d="M6 6l12 12M6 18L18 6" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Full-Screen Nav Overlay -->
+  <div id="nav-links" 
+    class="hidden fixed inset-0 bg-[#011d22] flex flex-col items-center justify-center space-y-[20px] 
+           lg:static lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:space-x-[20px] 
+           lg:bg-transparent lg:h-auto lg:w-auto transition-all duration-500 ease-in-out">
     {{ _self.navLink('About', '/about') }}
 
     {% for category in categories %}
@@ -28,3 +51,23 @@
   </div>
 </nav>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = !navLinks.classList.contains('hidden');
+
+      // Toggle menu visibility
+      navLinks.classList.toggle('hidden');
+      hamburger.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+
+      // Prevent background scroll when menu is open
+      document.body.style.overflow = isOpen ? 'auto' : 'hidden';
+    });
+  });
+</script>
