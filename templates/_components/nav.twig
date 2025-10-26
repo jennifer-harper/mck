@@ -11,8 +11,8 @@
   </a>
 {% endmacro %}
 
-<nav class="bg-[#011d22] px-[20px] md:px-[3vw] py-[10px] relative z-50 flex">
-  <div class="flex items-center justify-between w-full z-100 relative">
+<nav style="background-color: #{{ globals.darkBackground }};" class="px-[20px] md:px-[3vw] py-[10px] z-50 flex fixed w-full">
+  <div class="flex items-center justify-between  w-full lg:w-auto z-100 relative">
     <!-- Logo -->
     <a href="/" class="flex-shrink-0">
       <img src="../uploads/images/logo.svg" alt="Logo" class="h-[40px]">
@@ -37,16 +37,13 @@
   </div>
 
   <!-- Full-Screen Nav Overlay -->
-  <div id="nav-links" 
-    class="hidden fixed inset-0 bg-[#011d22] flex flex-col items-center justify-center space-y-[20px] 
-           lg:static lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:space-x-[20px] 
-           lg:bg-transparent lg:h-auto lg:w-auto transition-all duration-500 ease-in-out">
+  <div id="nav-links" class="hidden fixed inset-0 flex flex-col items-center justify-center space-y-[20px] 
+           lg:static lg:flex lg:flex-row lg:items-center lg:justify-evenly lg:space-y-0 lg:space-x-[20px] 
+           lg:bg-transparent lg:h-auto lg:w-full transition-all duration-500 ease-in-out" style="background-color: #{{ globals.darkBackground }};">
     {{ _self.navLink('About', '/about') }}
-
     {% for category in categories %}
       {{ _self.navLink(category.title, category.url) }}
     {% endfor %}
-
     {{ _self.navLink('Contact', '/contact') }}
   </div>
 </nav>

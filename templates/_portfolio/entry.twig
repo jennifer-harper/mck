@@ -6,7 +6,7 @@
 {% block content %} 
     <div class="">
 
-        <div class="flex flex-col justify-center text-center py-[80px]  md:py-[8vw]"  style="background-color: #{{ globals.lightBackground }};">
+        <div class="flex flex-col justify-center text-center pb-[80px] pt-[180px] md:pt-[16vw] md:pb-[8vw]"  style="background-color: #{{ globals.lightBackground }};">
             <div class="lg:px-[15vw] xl:px-[20vw] mb-[20px] md:mb-[1vw] text-balance">
                 {% if entry.mainHeading %} 
                    <h1> {{entry.mainHeading}}</h1>
@@ -32,7 +32,7 @@
                         {% if section.textEditor %}
                             {% set hasSibling = (section.imageTitle | length) or (section.galleryTitle | length) %}
                             <div class="text-pretty flex flex-row justify-center {% if hasSibling %} p-0 pb-[40px] md:pb-[4vw] lg:pb-[6vw]{% else %}p-0 md:pb-0 lg:pb-0{% endif %}">
-                                <div class="lg:max-w-[60%] ">{{ section.textEditor }}</div>
+                                <div class="text-balance">{{ section.textEditor }}</div>
                             </div>
                         {% endif %}
 
@@ -121,20 +121,7 @@
             {% endfor %}
         </div> 
 
-       
-        {# {% for block in entry.ctaSection %}
-            {% if block.type == "buttonGroup" %}
-                    <div style="background-color: #{{ globals.darkBackground }};" class="w-full text-center text-white mt-[20px] md:mt-[6vw] lg:mt-[8vw] 
-                    p-[20px] md:px-[8vw] lg:px-[10vw] md:py-[3vw] lg:py-[4vw] text-balance">
-                    <div class=" mb-[20px] lg:mb-[1vw]">{{ block.smallParagraph}}</div>
-                    {% if block.pageLink.one() %}
-                        <a href="{{ block.pageLink.one().url }}" class="uppercase tracking-[.3em]" style="color:#{{ globals.contrastColorOne }};">
-                            {{ block.buttonText }}
-                        </a>
-                    {% endif %}
-                </div>
-            {% endif %}
-        {% endfor %} #}
+
        
        
     </div>
