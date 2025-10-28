@@ -62,23 +62,6 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 10720a81-0ac5-47a2-9041-ad1a16bfd3d2 # Logo Image
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2a6b8308-34aa-48d5-8428-67f65ef00ce4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-10-20T01:33:09+00:00'
-            editCondition: null
-            elementCondition: null
             fieldUid: 92a692c0-41b1-49fe-a284-92f3c2587058 # Main Heading
             handle: null
             includeInCards: false

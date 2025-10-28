@@ -1,9 +1,9 @@
 /*! tailwindcss v4.0.13 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;500&display=swap');
+@import url('https://use.typekit.net/ufa7hnt.css');
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: 'Noto Serif';
+    --font-sans: 'shackleton', serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
@@ -362,6 +362,9 @@
   }
   .mb-\[20px\] {
     margin-bottom: 20px;
+  }
+  .mb-\[40px\] {
+    margin-bottom: 40px;
   }
   .box-border {
     box-sizing: border-box;
@@ -1307,9 +1310,6 @@
   .py-\[20px\] {
     padding-block: 20px;
   }
-  .py-\[40px\] {
-    padding-block: 40px;
-  }
   .pt-\[20px\] {
     padding-top: 20px;
   }
@@ -1319,20 +1319,11 @@
   .pt-\[60px\] {
     padding-top: 60px;
   }
-  .pt-\[80px\] {
-    padding-top: 80px;
-  }
   .pt-\[100px\] {
     padding-top: 100px;
   }
-  .pt-\[120px\] {
-    padding-top: 120px;
-  }
   .pt-\[140px\] {
     padding-top: 140px;
-  }
-  .pt-\[180px\] {
-    padding-top: 180px;
   }
   .pb-\[20px\] {
     padding-bottom: 20px;
@@ -1971,6 +1962,11 @@
       margin-bottom: 1vw;
     }
   }
+  .md\:mb-\[4vw\] {
+    @media (width >= 48rem) {
+      margin-bottom: 4vw;
+    }
+  }
   .md\:h-\[50vw\] {
     @media (width >= 48rem) {
       height: 50vw;
@@ -2036,29 +2032,9 @@
       padding-inline: 8vw;
     }
   }
-  .md\:py-\[6vw\] {
-    @media (width >= 48rem) {
-      padding-block: 6vw;
-    }
-  }
-  .md\:py-\[8vw\] {
-    @media (width >= 48rem) {
-      padding-block: 8vw;
-    }
-  }
   .md\:py-\[10vw\] {
     @media (width >= 48rem) {
       padding-block: 10vw;
-    }
-  }
-  .md\:pt-\[6vw\] {
-    @media (width >= 48rem) {
-      padding-top: 6vw;
-    }
-  }
-  .md\:pt-\[8vw\] {
-    @media (width >= 48rem) {
-      padding-top: 8vw;
     }
   }
   .md\:pt-\[10vw\] {
@@ -2309,8 +2285,9 @@
     letter-spacing: 0.3em;
   }
   p {
+    font-family: 'henderson-sans-basic', sans-serif;
     font-size: var(--p-size);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5em;
   }
 }

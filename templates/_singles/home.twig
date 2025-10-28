@@ -1,17 +1,9 @@
 {% extends "_layout.twig" %} 
 {% set bodyAttributes ={ class: "home" } %} 
 {% set docTitle = entry.title %} 
-{# {% set metaDesc = entry.metaDescription %}  #}
+{% set metaDesc = entry.metaDescription %} 
 
-{# {% set covers = craft.entries()
-    .section('portfolio')
-    .relatedTo({
-        targetElement: craft.categories().slug('covers').one(),
-        field: 'projectCategory'
-    })
-    .with([['mainImage']])
-    .orderBy('postDate desc')
-    .all() %}  #}
+
 
 {% set all = craft.entries()
     .section('portfolio')
@@ -24,18 +16,19 @@
 {% block content %} 
     <div style="background-color: #{{ globals.darkBackground }};">
         <div class="flex flex-col justify-center text-center text-white p-[20px] pt-[100px] lg:pt-[12vw]  lg:pb-[6vw]">
-            {% set image = entry.logoImage.one %}
+            {# {% set image = entry.logoImage.one %}
             {% if image %}
-                <img src="{{ image.getUrl() }}" alt="" class="px-[20px] lg:px-[20vw] xl:px-[25vw]">
-            {% endif %}
-            
-
+                <img src="{{ image.getUrl() }}" alt="" >
+            {% endif %} #}
+            <div class="px-[20px] lg:px-[20vw] xl:px-[25vw] mb-[40px] md:mb-[4vw]">
+                {% include '_components/logo-svg' %}
+            </div>
             <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
                 {% if entry.mainHeading %} 
                    <h1> {{entry.mainHeading}}</h1>
                 {% endif %}
             </div>
-            <div class="p-[20px] lg:px-[25vw] xl:px-[35vw] text-balance">
+            <div class="p-[20px] lg:px-[25vw] xl:px-[30vw] text-balance">
                 {% if entry.smallParagraph %} 
                     {{entry.smallParagraph}}
                 {% endif %}

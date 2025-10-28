@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 1995c984-7976-460c-957a-bf9dcdcc7ed6 # Home
+    uid: 5dbcbc82-9978-40eb-80e8-6f9e7d35cd60 # Page Builder
 handle: about
 maxAuthors: 1
 name: About
