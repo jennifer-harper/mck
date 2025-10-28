@@ -459,11 +459,23 @@
   .h-\[40px\] {
     height: 40px;
   }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .h-\[80px\] {
+    height: 80px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
   .h-\[100vh\] {
     height: 100vh;
   }
   .h-\[100vw\] {
     height: 100vw;
+  }
+  .h-\[1000px\] {
+    height: 1000px;
   }
   .h-full {
     height: 100%;
@@ -1310,6 +1322,15 @@
   .py-\[20px\] {
     padding-block: 20px;
   }
+  .py-\[80px\] {
+    padding-block: 80px;
+  }
+  .py-\[100px\] {
+    padding-block: 100px;
+  }
+  .pt-\[10px\] {
+    padding-top: 10px;
+  }
   .pt-\[20px\] {
     padding-top: 20px;
   }
@@ -1468,6 +1489,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-current {
+    color: currentColor;
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -1967,6 +1991,16 @@
       margin-bottom: 4vw;
     }
   }
+  .md\:h-\[5\.2vw\] {
+    @media (width >= 48rem) {
+      height: 5.2vw;
+    }
+  }
+  .md\:h-\[5vw\] {
+    @media (width >= 48rem) {
+      height: 5vw;
+    }
+  }
   .md\:h-\[50vw\] {
     @media (width >= 48rem) {
       height: 50vw;
@@ -2030,6 +2064,11 @@
   .md\:px-\[8vw\] {
     @media (width >= 48rem) {
       padding-inline: 8vw;
+    }
+  }
+  .md\:py-\[8vw\] {
+    @media (width >= 48rem) {
+      padding-block: 8vw;
     }
   }
   .md\:py-\[10vw\] {
