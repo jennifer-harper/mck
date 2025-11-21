@@ -3,7 +3,7 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: 'shackleton', serif;
+    --font-sans: 'shackleton-narrow', serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
@@ -30,9 +30,6 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --h1-size: clamp(1.5em, 2.5vw, 6.5em);
-    --h2-size: clamp(1em, 1vw, 2em);
-    --p-size: clamp(1em, 1vw, 2em);
   }
 }
 @layer base {
@@ -462,20 +459,11 @@
   .h-\[60px\] {
     height: 60px;
   }
-  .h-\[80px\] {
-    height: 80px;
-  }
-  .h-\[100px\] {
-    height: 100px;
-  }
   .h-\[100vh\] {
     height: 100vh;
   }
   .h-\[100vw\] {
     height: 100vw;
-  }
-  .h-\[1000px\] {
-    height: 1000px;
   }
   .h-full {
     height: 100%;
@@ -501,14 +489,17 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-\[40px\] {
+    width: 40px;
+  }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
   }
-  .max-w-\[50\%\] {
-    max-width: 50%;
+  .max-w-\[70\%\] {
+    max-width: 70%;
   }
   .max-w-none {
     max-width: none;
@@ -1328,9 +1319,6 @@
   .py-\[100px\] {
     padding-block: 100px;
   }
-  .pt-\[10px\] {
-    padding-top: 10px;
-  }
   .pt-\[20px\] {
     padding-top: 20px;
   }
@@ -1343,17 +1331,11 @@
   .pt-\[100px\] {
     padding-top: 100px;
   }
-  .pt-\[140px\] {
-    padding-top: 140px;
-  }
   .pb-\[20px\] {
     padding-bottom: 20px;
   }
   .pb-\[40px\] {
     padding-bottom: 40px;
-  }
-  .pb-\[80px\] {
-    padding-bottom: 80px;
   }
   .text-center {
     text-align: center;
@@ -1996,11 +1978,6 @@
       height: 5.2vw;
     }
   }
-  .md\:h-\[5vw\] {
-    @media (width >= 48rem) {
-      height: 5vw;
-    }
-  }
   .md\:h-\[50vw\] {
     @media (width >= 48rem) {
       height: 50vw;
@@ -2041,11 +2018,6 @@
       padding: calc(var(--spacing) * 0);
     }
   }
-  .md\:px-0 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 0);
-    }
-  }
   .md\:px-\[2vw\] {
     @media (width >= 48rem) {
       padding-inline: 2vw;
@@ -2056,9 +2028,9 @@
       padding-inline: 3vw;
     }
   }
-  .md\:px-\[5vw\] {
+  .md\:px-\[4vw\] {
     @media (width >= 48rem) {
-      padding-inline: 5vw;
+      padding-inline: 4vw;
     }
   }
   .md\:px-\[8vw\] {
@@ -2076,16 +2048,6 @@
       padding-block: 10vw;
     }
   }
-  .md\:pt-\[10vw\] {
-    @media (width >= 48rem) {
-      padding-top: 10vw;
-    }
-  }
-  .md\:pt-\[16vw\] {
-    @media (width >= 48rem) {
-      padding-top: 16vw;
-    }
-  }
   .md\:pb-0 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 0);
@@ -2094,11 +2056,6 @@
   .md\:pb-\[4vw\] {
     @media (width >= 48rem) {
       padding-bottom: 4vw;
-    }
-  }
-  .md\:pb-\[8vw\] {
-    @media (width >= 48rem) {
-      padding-bottom: 8vw;
     }
   }
   .lg\:static {
@@ -2279,9 +2236,92 @@
       padding-bottom: 6vw;
     }
   }
-  .xl\:px-\[7vw\] {
+  .xl\:static {
     @media (width >= 80rem) {
-      padding-inline: 7vw;
+      position: static;
+    }
+  }
+  .xl\:flex {
+    @media (width >= 80rem) {
+      display: flex;
+    }
+  }
+  .xl\:hidden {
+    @media (width >= 80rem) {
+      display: none;
+    }
+  }
+  .xl\:h-\[2vw\] {
+    @media (width >= 80rem) {
+      height: 2vw;
+    }
+  }
+  .xl\:h-auto {
+    @media (width >= 80rem) {
+      height: auto;
+    }
+  }
+  .xl\:w-\[2vw\] {
+    @media (width >= 80rem) {
+      width: 2vw;
+    }
+  }
+  .xl\:w-auto {
+    @media (width >= 80rem) {
+      width: auto;
+    }
+  }
+  .xl\:w-full {
+    @media (width >= 80rem) {
+      width: 100%;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 80rem) {
+      align-items: center;
+    }
+  }
+  .xl\:justify-evenly {
+    @media (width >= 80rem) {
+      justify-content: space-evenly;
+    }
+  }
+  .xl\:space-y-0 {
+    @media (width >= 80rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
+  .xl\:space-x-\[20px\] {
+    @media (width >= 80rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(20px * var(--tw-space-x-reverse));
+        margin-inline-end: calc(20px * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .xl\:bg-transparent {
+    @media (width >= 80rem) {
+      background-color: transparent;
+    }
+  }
+  .xl\:px-\[4vw\] {
+    @media (width >= 80rem) {
+      padding-inline: 4vw;
+    }
+  }
+  .xl\:px-\[17vw\] {
+    @media (width >= 80rem) {
+      padding-inline: 17vw;
     }
   }
   .xl\:px-\[20vw\] {
@@ -2289,14 +2329,14 @@
       padding-inline: 20vw;
     }
   }
+  .xl\:px-\[22vw\] {
+    @media (width >= 80rem) {
+      padding-inline: 22vw;
+    }
+  }
   .xl\:px-\[25vw\] {
     @media (width >= 80rem) {
       padding-inline: 25vw;
-    }
-  }
-  .xl\:px-\[30vw\] {
-    @media (width >= 80rem) {
-      padding-inline: 30vw;
     }
   }
   .xl\:px-\[35vw\] {
@@ -2310,24 +2350,64 @@
 }
 @layer base {
   h1 {
-    font-size: var(--h1-size);
+    font-size: 36px;
     line-height: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
+    @media (min-width: 1600px) {
+      font-size: 56px;
+    }
+    @media (min-width: 4000px) {
+      font-size: 112px;
+    }
   }
-  h2 {
-    font-size: var(--h2-size);
-    font-weight: 500;
+  .contactBtn, h2 {
+    font-family: 'grappa-variable', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 0.3em;
     line-height: 1.2em;
+    @media (min-width: 1600px) {
+      font-size: 25px;
+    }
+    @media (min-width: 4000px) {
+      font-size: 50px;
+    }
   }
   h3 {
     letter-spacing: 0.3em;
   }
   p {
     font-family: 'henderson-sans-basic', sans-serif;
-    font-size: var(--p-size);
-    font-weight: 400;
-    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4em;
+    @media (min-width: 1600px) {
+      font-size: 28px;
+    }
+    @media (min-width: 4000px) {
+      font-size: 56px;
+    }
+  }
+}
+.small-p p {
+  font-size: 16px;
+  @media (min-width: 1600px) {
+    font-size: 24px;
+  }
+  @media (min-width: 4000px) {
+    font-size: 50px;
+  }
+}
+a.nav-anchor {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  font-family: 'henderson-sans-basic', sans-serif;
+  @media (min-width: 1600px) {
+    font-size: 22px;
+  }
+  @media (min-width: 4000px) {
+    font-size: 44px;
   }
 }
 div {
@@ -2347,6 +2427,7 @@ div {
   color: var(--hover-color);
 }
 .contactBtn {
+  letter-spacing: 0.4em;
   color: var(--hover-color);
   transition: color 0.3s ease;
 }
@@ -2369,6 +2450,9 @@ div {
     -o-object-position: 50% 50%;
     object-position: 50% 50%;
   }
+}
+.home h1 {
+  letter-spacing: 0.05em;
 }
 @property --tw-translate-x {
   syntax: "*";

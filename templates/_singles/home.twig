@@ -20,15 +20,15 @@
             {% if image %}
                 <img src="{{ image.getUrl() }}" alt="" >
             {% endif %} #}
-            <div class="px-[20px] lg:px-[20vw] xl:px-[25vw] mb-[40px] md:mb-[4vw]">
+            <div class="px-[20px] lg:px-[20vw] xl:px-[35vw] mb-[40px] md:mb-[4vw]">
                 {% include '_components/logo-svg' %}
             </div>
-            <div class="p-[20px] lg:px-[15vw] xl:px-[20vw] text-balance">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[17vw] text-balance">
                 {% if entry.mainHeading %} 
                    <h1 style="color: #{{ globals.firstTextColor }}"> {{entry.mainHeading}}</h1>
                 {% endif %}
             </div>
-            <div class="p-[20px] lg:px-[25vw] xl:px-[30vw] text-balance">
+            <div class="p-[20px] lg:px-[25vw] xl:px-[25vw] text-balance">
                 {% if entry.smallParagraph %} 
                     {{entry.smallParagraph}}
                 {% endif %}
@@ -55,7 +55,7 @@
         </div>
 
         <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
-            <div class="p-[20px] lg:px-[25vw] xl:px-[30vw] text-balance">
+            <div class="p-[20px] lg:px-[25vw] xl:px-[22vw] text-balance">
                 {% if entry.smallParagraph2 %} 
                     {{entry.smallParagraph2}}
                 {% endif %}
@@ -65,16 +65,16 @@
         <div class="flex flex-col lg:flex-row justify-center text-center  pt-[40px]  lg:py-[4vw]" style="background-color: #{{ globals.contrastColorOne }};">
             {% for block in entry.threeColumnParagraphs %}
                 {% if block.type == "threeColumnGroup" %}
-                <div class="px-[20px] pb-[40px] lg:pb-0 md:px-[5vw]  lg:px-[4vw]  xl:px-[7vw] flex flex-col items-center">
+                <div class="px-[20px] pb-[40px] lg:pb-0 md:px-[4vw]  lg:px-[4vw]  xl:px-[4vw] flex flex-col items-center">
                         <h2 class="pb-[20px] lg:pb-[1vw]"> {{ block.title }} </h2>
-                    <div class="width-full max-w-[50%] md:max-w-[100%]">{{ block.smallParagraph}}</div>
+                    <div class="small-p width-full max-w-[70%] md:max-w-[100%]">{{ block.smallParagraph}}</div>
                 </div>
                 {% endif %}
             {% endfor %}
         </div>
 
         <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
-            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[22vw] text-balance">
                 {% if entry.smallParagraph3 %} 
                     {{entry.smallParagraph3}}
                 {% endif %}
@@ -96,7 +96,7 @@
         </div>
 
         <div class="flex flex-col justify-center text-center text-white p-[20px]  lg:pt-[8vw]  lg:pb-[6vw]">
-            <div class="p-[20px] lg:px-[15vw] xl:px-[25vw] text-balance  mb-[20px] lg:mb-[1vw]">
+            <div class="p-[20px] lg:px-[15vw] xl:px-[22vw] text-balance  mb-[20px] lg:mb-[1vw]">
                 {% if entry.smallParagraph4 %} 
                     {{entry.smallParagraph4}}
                 {% endif %}
