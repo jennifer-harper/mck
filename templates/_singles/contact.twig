@@ -6,7 +6,5 @@
 {% set page = craft.entries().section('contact').all() %} 
 
 {% block content %} 
-    {% for entry in page %} 
-    <h1>{{entry.title}}</h1>
-    {% endfor %}
+ {% include '_components/portfolio' %}
 {% endblock %}
