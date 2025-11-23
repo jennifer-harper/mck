@@ -2374,6 +2374,12 @@ div {
 .navLinks:hover {
   color: var(--hover-color);
 }
+footer a svg .first {
+  fill: #fff;
+}
+footer a:hover svg .first {
+  fill: var(--hover-color);
+}
 .contactBtn {
   letter-spacing: 0.1em;
   color: var(--hover-color);

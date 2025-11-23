@@ -100,9 +100,18 @@ div {
   color: var(--hover-color); /* global color on hover */
 }
 
+footer a svg .first {
+  fill: #fff;
+}
+
+footer a:hover svg .first {
+  fill: var(--hover-color);
+}
+
 .contactBtn {
   letter-spacing: 0.1em;
   color: var(--hover-color);
+
   transition: color 0.3s ease;
 }
 .contactBtn:hover {
