@@ -46,7 +46,14 @@
     {% for category in categories %}
       {{ _self.navLink(category.title, category.url) }}
     {% endfor %}
-    {{ _self.navLink('Contact', '/contact') }}
+<div class="block xl:hidden pb-[20px]"> 
+          <a href="mailto:mck247@gmail.com" class="contactBtn tracking-[.3em]" style="--hover-color:#{{ globals.contrastColorOne }};">mck247@gmail.com</a>
+          
+ </div>
+     <div class="block xl:hidden"> 
+       <a href="tel:+64211991365" class="contactBtn  tracking-[.3em]" style="--hover-color:#{{ globals.contrastColorOne }};">+64 21 1991 365</a>
+     </div>
+    <div class="hidden xl:block">{{ _self.navLink('Contact', '#footer') }}</div>
   </div>
 </nav>
 

@@ -101,7 +101,7 @@ div {
 }
 
 .contactBtn {
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   color: var(--hover-color);
   transition: color 0.3s ease;
 }

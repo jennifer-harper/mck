@@ -1307,6 +1307,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[40px\] {
+    padding-inline: 40px;
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -1330,6 +1333,9 @@
   }
   .pt-\[100px\] {
     padding-top: 100px;
+  }
+  .pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
   }
   .pb-\[20px\] {
     padding-bottom: 20px;
@@ -2038,6 +2044,11 @@
       padding-inline: 8vw;
     }
   }
+  .md\:px-\[20vw\] {
+    @media (width >= 48rem) {
+      padding-inline: 20vw;
+    }
+  }
   .md\:py-\[8vw\] {
     @media (width >= 48rem) {
       padding-block: 8vw;
@@ -2058,11 +2069,6 @@
       padding-bottom: 4vw;
     }
   }
-  .lg\:static {
-    @media (width >= 64rem) {
-      position: static;
-    }
-  }
   .lg\:mb-0 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -2078,39 +2084,14 @@
       margin-bottom: 2vw;
     }
   }
-  .lg\:flex {
-    @media (width >= 64rem) {
-      display: flex;
-    }
-  }
-  .lg\:hidden {
-    @media (width >= 64rem) {
-      display: none;
-    }
-  }
   .lg\:h-\[25vw\] {
     @media (width >= 64rem) {
       height: 25vw;
     }
   }
-  .lg\:h-auto {
-    @media (width >= 64rem) {
-      height: auto;
-    }
-  }
   .lg\:w-\[calc\(25\%-15px\)\] {
     @media (width >= 64rem) {
       width: calc(25% - 15px);
-    }
-  }
-  .lg\:w-auto {
-    @media (width >= 64rem) {
-      width: auto;
-    }
-  }
-  .lg\:w-full {
-    @media (width >= 64rem) {
-      width: 100%;
     }
   }
   .lg\:max-w-\[25\%\] {
@@ -2121,39 +2102,6 @@
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
-    }
-  }
-  .lg\:items-center {
-    @media (width >= 64rem) {
-      align-items: center;
-    }
-  }
-  .lg\:justify-evenly {
-    @media (width >= 64rem) {
-      justify-content: space-evenly;
-    }
-  }
-  .lg\:space-y-0 {
-    @media (width >= 64rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-y-reverse: 0;
-        margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
-        margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
-      }
-    }
-  }
-  .lg\:space-x-\[20px\] {
-    @media (width >= 64rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(20px * var(--tw-space-x-reverse));
-        margin-inline-end: calc(20px * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
-  .lg\:bg-transparent {
-    @media (width >= 64rem) {
-      background-color: transparent;
     }
   }
   .lg\:p-\[2vw\] {
@@ -2174,11 +2122,6 @@
   .lg\:px-\[15vw\] {
     @media (width >= 64rem) {
       padding-inline: 15vw;
-    }
-  }
-  .lg\:px-\[20vw\] {
-    @media (width >= 64rem) {
-      padding-inline: 20vw;
     }
   }
   .lg\:px-\[25vw\] {
@@ -2239,6 +2182,11 @@
   .xl\:static {
     @media (width >= 80rem) {
       position: static;
+    }
+  }
+  .xl\:block {
+    @media (width >= 80rem) {
+      display: block;
     }
   }
   .xl\:flex {
@@ -2427,7 +2375,7 @@ div {
   color: var(--hover-color);
 }
 .contactBtn {
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   color: var(--hover-color);
   transition: color 0.3s ease;
 }

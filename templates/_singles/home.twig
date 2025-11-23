@@ -16,11 +16,8 @@
 {% block content %} 
     <div style="background-color: #{{ globals.darkBackground }};">
         <div class="flex flex-col justify-center text-center text-white p-[20px] pt-[100px] lg:pt-[12vw]  lg:pb-[6vw]">
-            {# {% set image = entry.logoImage.one %}
-            {% if image %}
-                <img src="{{ image.getUrl() }}" alt="" >
-            {% endif %} #}
-            <div class="px-[20px] lg:px-[20vw] xl:px-[35vw] mb-[40px] md:mb-[4vw]">
+
+            <div class="px-[40px] md:px-[20vw] xl:px-[35vw] mb-[40px] md:mb-[4vw]">
                 {% include '_components/logo-svg' %}
             </div>
             <div class="p-[20px] lg:px-[15vw] xl:px-[17vw] text-balance">
@@ -101,9 +98,9 @@
                     {{entry.smallParagraph4}}
                 {% endif %}
             </div>
-           <a href="/contact" class="contactBtn uppercase tracking-[.3em]" style="--hover-color:#{{ globals.contrastColorOne }};">
+           {# <a href="/contact" class="contactBtn uppercase tracking-[.3em]" style="--hover-color:#{{ globals.contrastColorOne }};">
             Contact
-            </a>
+            </a> #}
         </div>         
     </div>
 
