@@ -1,38 +1,54 @@
+{% set image = entry.mainImage.one() %}
+
 {% if hide %}
-    <div class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw]  relative group overflow-hidden">
+    <div class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] relative group overflow-hidden">
         <div class="media-box">
             {% if image %}
-                <img src="{{ image.getUrl() }}"
-                    {# class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full" #}
-                     class="w-full"
-                    loading="lazy"
-                    alt="{{ image.alt|default('Placeholder') }}">
+                {% if image.cloudflareCode %}
+                    <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public"
+                        class="w-full"
+                        loading="lazy"
+                        alt="{{ image.alt|default('Placeholder') }}">
+                {% else %}
+                    <img src="{{ image.getUrl() }}"
+                        class="w-full"
+                        loading="lazy"
+                        alt="{{ image.alt|default('Placeholder') }}">
+                {% endif %}
             {% endif %}
         </div>
     </div>
+
 {% else %}
     <a href="{{ entry.url }}" class="w-full h-[100vw] md:max-w-[50%] md:h-[50vw] lg:max-w-[25%] lg:h-[25vw] relative group overflow-hidden">
         <div class="media-box">
-        {% if image %}
-            <img src="{{ image.getUrl() }}"
-                class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"
-                loading="lazy"
-                alt="{{ image.alt|default('Placeholder') }}">
-        {% endif %}
-    </div>
+            {% if image %}
+                {% if image.cloudflareCode %}
+                    <img src="https://imagedelivery.net/51czeTzEvIhO69gVCPWJSw/{{ image.cloudflareCode }}/public"
+                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"
+                        loading="lazy"
+                        alt="{{ image.alt|default('Placeholder') }}">
+                {% else %}
+                    <img src="{{ image.getUrl() }}"
+                        class="group-hover:opacity-10 transition delay-150 duration-300 ease-in w-full"
+                        loading="lazy"
+                        alt="{{ image.alt|default('Placeholder') }}">
+                {% endif %}
+            {% endif %}
+        </div>
 
-    <div class="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center">
-        {% if entry.title %}
-            <h2 class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-300 ease-in uppercase pt-[20px] px-[20px] lg:px-[4vw] lg:pt-[4vw] mb-[20px]">
-                {{ entry.title }}
-            </h2>
-        {% endif %}
-        {% if entry.subtitle %}
-            <p class="text-white text-center text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-300 ease-in uppercase pb-[20px] px-[20px] lg:px-[4vw] lg:pb-[4vw] text-balance">
-                {{ entry.subtitle }}
-            </p>
-        {% endif %}
-    </div>
+        <div class="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center">
+            {% if entry.title %}
+                <h2 class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-300 ease-in uppercase pt-[20px] px-[20px] lg:px-[4vw] lg:pt-[4vw] mb-[20px]">
+                    {{ entry.title }}
+                </h2>
+            {% endif %}
+
+            {% if entry.subtitle %}
+                <p class="text-white text-center text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-300 ease-in uppercase pb-[20px] px-[20px] lg:px-[4vw] lg:pb-[4vw] text-balance">
+                    {{ entry.subtitle }}
+                </p>
+            {% endif %}
+        </div>
     </a>
 {% endif %}
-
