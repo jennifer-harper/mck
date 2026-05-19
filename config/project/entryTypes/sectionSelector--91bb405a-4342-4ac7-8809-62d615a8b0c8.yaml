@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: lime
+description: null
 fieldLayouts:
   9ed30653-b51a-42a8-afc8-7d70d9ec1f82:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,12 +12,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T01:13:07+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 02164f0b-f429-44e3-a674-e028008b0b52 # Background Dark
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -26,12 +28,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:24:55+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d12655eb-9aeb-4d71-9c79-103e6db41e3c # Option: Text Editor
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -43,12 +44,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:37:08+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 3b3b4f6f-6498-4241-8459-4d1be84cbb33 # Option: Image with Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -60,12 +60,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T01:00:31+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 070a72f2-8c6a-43b7-b10b-753a0843d521 # Option: Gallery with Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -76,6 +75,7 @@ fieldLayouts:
         name: Content
         uid: 7b74bc58-15e8-40e3-a05a-4d998eb9d876
         userCondition: null
+    thumbFieldKey: null
 handle: sectionSelector
 hasTitleField: false
 icon: alien
@@ -87,3 +87,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

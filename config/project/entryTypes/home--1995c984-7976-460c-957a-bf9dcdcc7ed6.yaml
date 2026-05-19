@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: orange
+description: null
 fieldLayouts:
   56abbf82-a369-41cd-8c49-99b25961e66a:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -39,12 +40,11 @@ fieldLayouts:
             dateAdded: '2025-03-12T22:52:05+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -62,12 +62,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 92a692c0-41b1-49fe-a284-92f3c2587058 # Main Heading
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -79,12 +78,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -102,12 +100,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 03daee30-7887-47f7-a8ca-586f229f0245 # Small Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -119,12 +116,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
             handle: smallParagraph2
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -136,12 +132,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:46:53+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: aa207a96-2efd-45a3-8111-a43bcc9d7ead # Three Column Paragraphs
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -153,12 +148,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
             handle: smallParagraph3
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -170,12 +164,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T01:33:09+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 51718e75-a15c-4e6b-ae2c-d679d53e2a4f # Small paragraph
             handle: smallParagraph4
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -186,6 +179,7 @@ fieldLayouts:
         name: Content
         uid: c6ee2047-205a-4603-80e0-b161f4c17eb6
         userCondition: null
+    thumbFieldKey: null
 handle: home
 hasTitleField: true
 icon: alien
@@ -197,3 +191,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

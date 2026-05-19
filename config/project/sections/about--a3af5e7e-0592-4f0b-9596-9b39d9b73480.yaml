@@ -5,19 +5,13 @@ entryTypes:
     uid: 5dbcbc82-9978-40eb-80e8-6f9e7d35cd60 # Page Builder
 handle: about
 maxAuthors: 1
+minAuthors: 1
 name: About
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio

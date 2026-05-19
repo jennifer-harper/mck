@@ -11,6 +11,7 @@ settings:
     - image
     - pdf
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:e84480ee-4abb-457c-beb5-c36dd5fee591' # Images
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
@@ -23,14 +24,14 @@ settings:
   restrictedLocationSource: 'volume:e84480ee-4abb-457c-beb5-c36dd5fee591' # Images
   restrictedLocationSubpath: null
   selectionLabel: null
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: thumbs
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets

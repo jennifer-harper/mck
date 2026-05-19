@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: lime
+description: null
 fieldLayouts:
   67434661-63ac-450f-a383-1d41230e749c:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -39,12 +40,11 @@ fieldLayouts:
             dateAdded: '2025-03-12T23:22:12+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,12 +56,11 @@ fieldLayouts:
             dateAdded: '2025-10-14T04:44:53+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 6437e876-8aca-43aa-8ca3-2703d1852525 # Show/Hide
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -73,12 +72,11 @@ fieldLayouts:
             dateAdded: '2025-10-20T03:12:38+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e968b423-4e4c-4c01-9fb0-d78e51195caf # Selected Project
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -90,12 +88,11 @@ fieldLayouts:
             dateAdded: '2025-03-12T23:48:51+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0c799682-a8c3-4983-99b6-8ff4394d28a9 # Subtitle
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -107,12 +104,11 @@ fieldLayouts:
             dateAdded: '2025-03-12T22:58:07+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 97949477-948f-44cc-b7f2-a317d8cee210 # Project Category
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -124,12 +120,11 @@ fieldLayouts:
             dateAdded: '2025-03-12T22:20:29+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8b791e8b-5c63-4fa0-8152-1948e73f2cc6 # Main Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -147,12 +142,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:19:16+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 92a692c0-41b1-49fe-a284-92f3c2587058 # Main Heading
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -164,12 +158,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:19:16+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 03daee30-7887-47f7-a8ca-586f229f0245 # Small Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -181,12 +174,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:25:43+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 41a7fcd5-1881-4456-90f7-912fc3e1b1d2 # Project Page Generator
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -197,6 +189,7 @@ fieldLayouts:
         name: 'Project Page'
         uid: b2ff9498-144d-4065-b476-10162b33adc9
         userCondition: null
+    thumbFieldKey: null
 handle: portfolio
 hasTitleField: true
 icon: skull
@@ -208,3 +201,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

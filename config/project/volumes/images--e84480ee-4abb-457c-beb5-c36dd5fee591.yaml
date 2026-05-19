@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
   739e37c6-190a-41d3-9803-1024ac487fd8:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -15,7 +16,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -24,7 +24,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -44,13 +43,11 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -64,13 +61,13 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-12T22:00:14+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf83c8fd-a311-41ab-8250-a4950a149f6d # Cloudflare Code
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -81,6 +78,7 @@ fieldLayouts:
         name: Content
         uid: 1ea056a2-a3da-4a1e-b391-69fc58f7d933
         userCondition: null
+    thumbFieldKey: null
 fs: hardDisk
 handle: images
 name: Images

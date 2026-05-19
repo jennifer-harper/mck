@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: emerald
+description: null
 fieldLayouts:
   c45a1775-0e3a-4bd4-a5df-e298d34657f7:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: false
             size: null
@@ -39,12 +40,11 @@ fieldLayouts:
             dateAdded: '2025-10-21T00:43:25+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 78a82d0c-8b84-47b5-9d27-3ce8f342a951 # Project Images
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -55,6 +55,7 @@ fieldLayouts:
         name: Content
         uid: a2986abc-818a-427f-94eb-9384223eae2a
         userCondition: null
+    thumbFieldKey: null
 handle: projectGalleryGroup
 hasTitleField: true
 icon: alien
@@ -66,3 +67,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

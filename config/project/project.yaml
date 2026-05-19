@@ -1,4 +1,4 @@
-dateModified: 1763684994
+dateModified: 1779158005
 email:
   fromEmail: mck247@gmail.com
   fromName: mck-portfolio
@@ -22,6 +22,7 @@ meta:
     5e99c00d-22f0-4897-bb88-76356733085e: 'Page Link' # Page Link
     8a45ed1b-1d05-417c-8995-22819186d6e7: Contact # Contact
     8b791e8b-5c63-4fa0-8152-1948e73f2cc6: 'Main Image' # Main Image
+    29f87a2a-9d85-42a0-87f1-ab42d3599a16: 'Public Schema' # Public Schema
     41a7fcd5-1881-4456-90f7-912fc3e1b1d2: 'Project Page Generator' # Project Page Generator
     42af1c04-9461-4f98-8e7d-d687f7dd6cb9: 'Three Column Group' # Three Column Group
     46a84ffe-dd69-4412-8324-1b21c3034e18: Globals # Globals
@@ -56,10 +57,8 @@ meta:
     b6a36496-9170-4b27-8f32-98997a1007fd: 'CTA section' # CTA section
     b7d11927-833c-4c91-bb04-75361058ee4a: 'Main Logo Color' # Main Logo Color
     b76e7a66-aa7a-4bd5-b88d-428bf3afc249: 'Contrast Color Two' # Contrast Color Two
-    bde027f6-27be-4d50-89fb-9f3a4a622559: Simple # Simple
     cf83c8fd-a311-41ab-8250-a4950a149f6d: 'Cloudflare Code' # Cloudflare Code
     d12655eb-9aeb-4d71-9c79-103e6db41e3c: 'Option: Text Editor' # Option: Text Editor
-    dc07fb16-db3e-4bd7-8634-710cc4b4fcf6: 'H1 heading' # H1 heading
     e968b423-4e4c-4c01-9fb0-d78e51195caf: 'Selected Project' # Selected Project
     e84480ee-4abb-457c-beb5-c36dd5fee591: Images # Images
     efd30ae7-28bd-4dd4-a8ae-b2d92630d410: 'Dark Background' # Dark Background
@@ -67,7 +66,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   copy:
     edition: standard
     enabled: true
@@ -75,13 +74,13 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 5.1.1
+    schemaVersion: 5.14.0
 system:
   edition: solo
   live: true
   name: mck-portfolio
   retryDuration: null
-  schemaVersion: 5.7.0.3
+  schemaVersion: 5.10.0.0
   timeZone: Pacific/Auckland
 users:
   allowPublicRegistration: false

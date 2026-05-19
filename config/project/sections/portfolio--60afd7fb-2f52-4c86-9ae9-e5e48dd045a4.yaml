@@ -5,19 +5,13 @@ entryTypes:
     uid: 1f3fb01e-8cf9-4f43-a506-2f71468df0ed # Portfolio
 handle: portfolio
 maxAuthors: 1
+minAuthors: 1
 name: Portfolio
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio

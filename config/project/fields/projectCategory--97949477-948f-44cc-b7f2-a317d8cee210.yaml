@@ -6,11 +6,12 @@ searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: null
   minRelations: 1
   selectionLabel: null
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: false
   source: 'group:4e793615-67b0-4d56-bbda-b2bb09326692' # Portfolio categories
   targetSiteId: null

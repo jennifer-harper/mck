@@ -5,19 +5,13 @@ entryTypes:
     uid: 1995c984-7976-460c-957a-bf9dcdcc7ed6 # Home
 handle: home
 maxAuthors: 1
+minAuthors: 1
 name: Home
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   adc00353-c591-4ccc-b163-e71f6d107da9: # mck-portfolio

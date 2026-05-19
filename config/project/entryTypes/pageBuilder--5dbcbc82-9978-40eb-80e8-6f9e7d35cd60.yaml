@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: red
+description: null
 fieldLayouts:
   b0d0c30b-59c7-458f-b32b-87c341d013d4:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -39,12 +40,11 @@ fieldLayouts:
             dateAdded: '2025-10-28T04:20:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b5cd9e3a-8224-43de-83ef-798e14b34f2e # Meta Description
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,12 +56,11 @@ fieldLayouts:
             dateAdded: '2025-10-28T04:20:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 92a692c0-41b1-49fe-a284-92f3c2587058 # Main Heading
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -73,12 +72,11 @@ fieldLayouts:
             dateAdded: '2025-10-28T04:20:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 03daee30-7887-47f7-a8ca-586f229f0245 # Small Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -90,12 +88,11 @@ fieldLayouts:
             dateAdded: '2025-10-28T04:20:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 41a7fcd5-1881-4456-90f7-912fc3e1b1d2 # Project Page Generator
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -106,6 +103,7 @@ fieldLayouts:
         name: Content
         uid: 7aa8accf-331b-4021-897e-53ea66f9760e
         userCondition: null
+    thumbFieldKey: null
 handle: pageBuilder
 hasTitleField: true
 icon: heart
@@ -117,3 +115,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'
